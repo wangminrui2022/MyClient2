@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="com.maptype.core.Grids"/>
+<classEntry path="com.maptype.core.Roads"/>
+<classEntry path="com.maptype.core.Tiles"/>
+<classEntry path="com.maptype.core.isometric.IsoPoint3D"/>
+<classEntry path="com.maptype.core.isometric.IsoTile"/>
+<classEntry path="com.maptype.core.isometric.IsoUtils"/>
+<classEntry path="com.maptype.core.staggered.StaUtils"/>
+<classEntry path="com.maptype.interfaces.IGrid"/>
+<classEntry path="com.maptype.interfaces.IRoad"/>
+<classEntry path="com.maptype.interfaces.ITiles"/>
+<classEntry path="com.maptype.vo.PointVO"/>
+<classEntry path="com.maptype.vo.RectangleVO"/>
+<classEntry path="com.maptype.vo.RoadVO"/>
+</includeClasses>
+<includeResources/>
+<namespaceManifests/>
+</flexLibProperties>
