@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"
+		   creationComplete="onCreationComplete()">
+	<mx:Script>
+		<![CDATA[
+			import com.mapnavigate.loader.MExtendLoader;
+			import mx.core.UIComponent;
+
+			public static const WIDTH:String="width";
+			public static const HEIGHT:String="height";
+			public static const NULL:String="null";
+			
+			public var maxW:int;
+			public var maxH:int;
+			public var mX:int;
+			public var mY:int;
+			
+			private var container:UIComponent;
+			private var loader:Loader;
+			private var image:Bitmap;
+			private var frame:Shape;
+			private var pW:Number;
+			private var pH:Number;	
+					
+			/**
+			 * 应用程序加载完成
+			 * */
+			private function onCreationComplete():void
+			{
+				container=new UIComponent();
+				this.addChild(container);		
+			}	
+			/**
+			 * 设置图片
+			 * */
+			public function setImage(url:String):void
+			{
+				var extend:MExtendLoader=new MExtendLoader();
+				extend.addEventListener(Event.COMPLETE,onComplete);
+				extend.extendOnLoaderURL(url,MExtendLoader.MEL_LOADERINFO);				
+			}
+			/**
+			 * 设置框
+			 * */
+			public function setFrame(x:int,y:int):void
+			{
+				if(!frame)
+				{
+					frame=new Shape();
+					frame.graphics.beginFill(0xffffff);
+					frame.graphics.drawCircle(0,0,4);		
+					frame.graphics.endFill();				
+				}				
+				frame.x=Math.floor(x/pW)+image.x;
+				frame.y=Math.floor(y/pH)+image.y;								
+			}			
+			/**
+			 * 显示图片加载完成
+			 * */
+			private function onComplete(e:Event):void
+			{
+				loader=e.currentTarget.getLoader();
+				image=loader.contentLoaderInfo.content as Bitmap;
+				var rect:Rectangle=getPercent(this,image);
+				image.x=rect.x;
+				image.y=rect.y;
+				image.width=rect.width;
+				image.height=rect.height;
+				/**
+				 * 缩放百分比例,到小数点后两位
+				 * */
+				pW=Number(maxW/rect.width); 
+				pH=Number(maxH/rect.height);
+				pW=Number(pW.toFixed(2));
+				pH=Number(pH.toFixed(2));		
+				setFrame(mX,mY);				
+				rect=null;
+				container.addChild(image);
+				container.addChild(frame);
+				this.dispatchEvent(e);
+			}
+			/**
+			 * 根据A获得B的等比例宽高尺寸
+			 * */
+			private function getPercent(A:DisplayObject,B:DisplayObject):Rectangle
+			{
+				var rect:Rectangle=new Rectangle();
+				var max:String=getMax(A,B);		
+				if(max==WIDTH)
+				{
+					//获得比例
+					var maxW:int=B.width-(B.width-A.width);
+					var percentW:Number=maxW/B.width;
+					percentW=Number(percentW.toFixed(1));
+					rect.width=maxW;
+					rect.height=Math.floor(percentW*B.height);
+				}
+				else if(max==HEIGHT)
+				{
+					var maxH:int=B.height-(B.height-A.height);
+					var percentH:Number=maxH/B.height;
+					percentH=Number(percentH.toFixed(1));
+					rect.width=Math.floor(percentH*B.width);
+					rect.height=maxH;
+				}
+				else
+				{
+					rect.width=B.width;
+					rect.height=B.height
+				}
+				rect.x=(A.width-rect.width)/2;
+				rect.y=(A.height-rect.height)/2;	
+				A=null;
+				B=null;
+				return rect;
+			}
+			/**
+			 * 根据A检查B的缩小依据(宽或高)
+			 * */
+			private function getMax(A:DisplayObject,B:DisplayObject):String
+			{
+				var tmpW:int;
+				var tmpH:int;				
+				if(B.width>A.width)
+					tmpW=B.width-A.width;
+				if(B.height>A.height)
+					tmpH=B.height-A.height;	
+				A=null;
+				B=null;				
+				if(tmpW>tmpH)
+					return WIDTH;
+				else if(tmpW<tmpH)	
+					return HEIGHT;
+				else if(tmpW==tmpH && (tmpW>0 && tmpH>0))
+					return WIDTH;
+				else 
+					return NULL;			
+			}	
+			/**
+			 * 垃圾清理
+			 * */
+			public function clear():void
+			{
+				container.removeChild(image);
+				container.removeChild(frame);				
+				if(loader)
+					loader.unload();
+				loader=null;
+				if(image)
+					image.bitmapData.dispose();
+				image=null;
+			}				
+		]]>
+	</mx:Script>
+</mx:Canvas>

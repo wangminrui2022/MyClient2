@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="com.mapnavigate.core.MapNavigate"/>
+<classEntry path="com.mapnavigate.loader.MExtendLoader"/>
+<classEntry path="com.mapnavigate.loader.MLoader"/>
+</includeClasses>
+<includeResources/>
+<namespaceManifests/>
+</flexLibProperties>
