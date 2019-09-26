@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+-->
+<mx:MenuBar xmlns:mx="http://www.adobe.com/2006/mxml"
+			dataProvider="{menuItemsXml}"
+			width="100%"
+			labelField="@label"
+			creationComplete="onCreationComplete();"
+			fontSize="12">
+	<mx:Script>
+		<![CDATA[
+			import com.pureMVC.core.AppFacade;
+			import com.pureMVC.model.BindableProxy;
+			// 数据绑定模型层
+			[Bindable]
+			private var bindableP:BindableProxy;
+			
+			private function onCreationComplete():void
+			{
+				bindableP=AppFacade.getInstace().retrieveProxy(BindableProxy.NAME) as BindableProxy;
+			}
+		]]>
+	</mx:Script>
+	<mx:XMLList id="menuItemsXml">
+		<menuItem label="文件"
+				  data="fileBar">
+			<menuItem label="新建\t\t\tCtrl+N"
+					  data="creatFileBar"/>
+			<menuItem label="保存\t\t\tCtrl+S"
+					  data="saveFileBar" 
+					  enabled="{bindableP.SP_saveState}"/>
+			<menuItem label="关闭"
+					  data="closeFileBar"
+					  enabled="{bindableP.closeMenuEnabled}"/>
+			<menuItem label="打开"
+					  data="openFileBar"/>
+		</menuItem>
+		<menuItem label="工具"
+				  data="toolBar">
+			<menuItem label="地图信息\t\t\tF5"
+					  enabled="{bindableP.mapInfoMenuEnabled}"
+					  data="mapInfoBar"/>	
+			<menuItem label="设置地图"
+					  enabled="{bindableP.setMapMenuEnabled}"
+					  data="setMapBar"/>					  	
+			<menuItem label="交换深度\t\t\tF6"
+					  enabled="{bindableP.switchMenuEnabled}"
+					  data="switchBar"/>	
+			<menuItem label="复制地图效果图\t\tF7"
+					  enabled="{bindableP.copyMapImageMenuEnabled}"
+					  data="copyMapImageBar"/>											  						  			  
+		</menuItem>		
+		<menuItem label="关于"
+				  data="aboutBar">
+			<menuItem label="帮助\t\t\tF2"
+					  data="helpBar"/>				  
+			<menuItem label="关于我们"
+					  data="aboutMeBar"/>
+		</menuItem>
+	</mx:XMLList>
+</mx:MenuBar>

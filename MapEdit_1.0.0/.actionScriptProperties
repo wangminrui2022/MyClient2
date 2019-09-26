@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionScriptProperties mainApplicationPath="MapEdit.mxml" version="3">
+<compiler additionalCompilerArguments="-locale en_US -theme com/style/style.css" copyDependentFiles="true" enableModuleDebug="true" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersion="9.0.124" htmlPlayerVersionCheck="true" outputFolderPath="bin-debug" sourceFolderPath="src" strict="true" useApolloConfig="true" verifyDigests="true" warn="true">
+<compilerSourcePath/>
+<libraryPath defaultLinkType="1">
+<libraryPathEntry kind="4" path=""/>
+<libraryPathEntry kind="1" linkType="1" path="libs"/>
+<libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/MapEditPanel_1_0_0/bin/MapEditPanel_1_0_0.swc" useDefaultLinkType="false"/>
+<libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/MapFile_1_0_1/bin/MapFile_1_0_1.swc" useDefaultLinkType="false"/>
+<libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/MapType_1_0_0/bin/MapType_1_0_0.swc" useDefaultLinkType="false"/>
+</libraryPath>
+<sourceAttachmentPath/>
+</compiler>
+<applications>
+<application path="MapEdit.mxml"/>
+</applications>
+<modules/>
+<buildCSSFiles/>
+</actionScriptProperties>

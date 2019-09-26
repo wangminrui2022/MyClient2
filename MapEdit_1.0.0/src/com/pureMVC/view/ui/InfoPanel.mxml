@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+-->
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+				layout="absolute"
+				showCloseButton="true"
+				close="closeWindow();"
+				fontSize="12"
+				width="240"
+				height="210">
+	<mx:Script>
+		<![CDATA[
+			import com.pureMVC.view.mediator.MapEditPanelMediator;
+			import com.pureMVC.core.AppFacade;
+
+			/**
+			 * 关闭
+			 */
+			private function closeWindow():void
+			{
+				AppFacade.getInstace().sendNotification(MapEditPanelMediator.MEPM_HIDE_INFO_PANEL);
+			}
+		]]>
+	</mx:Script>
+	<mx:TextArea id="txt"
+		         selectable="false"
+		         editable="false"
+				 verticalScrollPolicy="on"
+				 horizontalScrollPolicy="off"
+				 width="100%"
+				 height="100%"
+				 wordWrap="true"
+				 fontSize="12"/>
+</mx:TitleWindow>

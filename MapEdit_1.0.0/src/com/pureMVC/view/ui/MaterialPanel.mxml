@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+-->
+<mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
+		  xmlns:as="com.pureMVC.view.ui.as_.*"
+		  verticalScrollPolicy="auto"
+		  horizontalScrollPolicy="off"
+		  layout="absolute"
+		  width="300"
+		  height="100%"
+		  title="材质面板"
+		  fontSize="12">
+	<mx:Script>
+		<![CDATA[
+			import com.pureMVC.view.mediator.MaterialPanelMediator;
+			import com.pureMVC.core.AppFacade;
+			import com.vo.material.MaterialTileVO;
+			import com.pureMVC.view.ui.as_.OnlyImage;
+			import mx.collections.ArrayCollection;
+
+			//指定每张图片宽
+			[Bindable]
+			public var imageW:int=90;
+			//指定每张图片高
+			[Bindable]
+			public var imageH:int=90;
+
+			private var pageSum:int;
+			private var pageNow:int=1;
+			private var rowSum:int;
+			private var rowNow:int;
+			private var i:int;
+			//对集合进行分页
+			private var pageArr:ArrayCollection=new ArrayCollection();
+
+			/**
+			 * 垃圾清理
+			 */
+			public function clear():void
+			{
+				if (pageArr.length > 0)
+				{
+					var lenY:int=pageArr.length;
+					for (var y:int=0; y < lenY; y++)
+					{
+						var tmp:ArrayCollection=pageArr.getItemAt(0) as ArrayCollection;
+						tmp.removeAll();
+						tmp=null;
+						pageArr.removeItemAt(0);
+					}
+				}
+				tileImage.clear();
+				pageSum=0;
+				pageNow=1;
+				rowSum=0;
+				rowNow=0;
+				i=0;
+				upBtn.enabled=false;
+				downBtn.enabled=false;
+				number.enabled=false;
+				goBtn.enabled=false;
+				pageLab.text=null;
+			}
+
+			/**
+			 * 更新TileList显示
+			 * */
+			public function updateTileList(materialTileArr:ArrayCollection):void
+			{
+				if (pageArr.length > 0)
+					pageArr.removeAll();
+				//如果当前材质集合里没有材质
+				if (materialTileArr.length == 0)
+				{
+					tileImage.clear();
+					return;
+				}
+				rowSum=materialTileArr.length;
+				rowNow=int(tileImage.height / (imageH + 20)) * int(tileImage.width / imageW);
+				pageSum=getPageSum(rowSum, rowNow);
+				//如果当前页大于总页
+				if (pageNow > pageSum)
+					pageNow=pageSum;
+				for (var y:int=0; y < pageSum; y++)
+				{
+					var tmpArr:ArrayCollection=new ArrayCollection();
+					for (var x:int=0; x < rowNow; x++)
+					{
+						if (i < rowSum)
+						{
+							tmpArr.addItem(materialTileArr.getItemAt(i));
+							i++;
+						}
+						else
+						{
+							break;
+						}
+					}
+					pageArr.addItem(tmpArr);
+				}
+				i=0;
+				pageLab.text="[" + pageNow + "/" + pageSum + "]页";
+				enabledBtn();
+				setTileImage(pageArr.getItemAt(pageNow - 1) as ArrayCollection);
+				materialTileArr=null;
+			}
+
+			/**
+			 *
+			 * */
+			public function setTileImage(dp:ArrayCollection):void
+			{
+				tileImage.dataProvider=dp;
+				tileImage.onTileImage();
+				tileImage.verticalScrollPosition=tileImage.maxVerticalScrollPosition;
+			}
+
+			/**
+			 * 获得总页数
+			 */
+			private function getPageSum(rowSum:int, rowNow:int):int
+			{
+				if (rowSum % rowNow == 0)
+					return rowSum / rowNow;
+				else
+					return int(rowSum / rowNow) + 1;
+			}
+
+			/**
+			 * 上一页
+			 * */
+			private function up():void
+			{
+				if (pageNow > 1)
+				{
+					pageNow--;
+					pageLab.text="[" + pageNow + "/" + pageSum + "]页";
+					enabledBtn();
+					setTileImage(pageArr.getItemAt(pageNow - 1) as ArrayCollection);
+				}
+			}
+
+			/**
+			 * 下一页
+			 * */
+			private function down():void
+			{
+				if (pageNow < pageSum)
+				{
+					pageNow++;
+					pageLab.text="[" + pageNow + "/" + pageSum + "]页";
+					enabledBtn();
+					setTileImage(pageArr.getItemAt(pageNow - 1) as ArrayCollection);
+				}
+			}
+
+			/**
+			 * 转到那一页
+			 * */
+			private function go():void
+			{
+				pageNow=number.value;
+				pageLab.text="[" + pageNow + "/" + pageSum + "]页";
+				enabledBtn();
+				setTileImage(pageArr.getItemAt(number.value - 1) as ArrayCollection);
+			}
+
+			/**
+			 * 按钮启动判断
+			 * */
+			private function enabledBtn():void
+			{
+				if (pageNow == 1 && pageNow == pageSum)
+				{
+					upBtn.enabled=false;
+					downBtn.enabled=false;
+					number.enabled=false;
+					goBtn.enabled=false;
+					pageLab.text=null;
+				}
+				else if (pageNow == 1)
+				{
+					upBtn.enabled=false;
+					downBtn.enabled=true;
+					number.enabled=true;
+					goBtn.enabled=true;
+				}
+				else if (pageNow == pageSum)
+				{
+					upBtn.enabled=true;
+					downBtn.enabled=false;
+					number.enabled=true;
+					goBtn.enabled=true;
+				}
+				else
+				{
+					upBtn.enabled=true;
+					downBtn.enabled=true;
+					number.enabled=true;
+					goBtn.enabled=true;
+				}
+				number.maximum=pageSum;
+			}
+
+			private function onRefreshBtnComplete(e:Event):void
+			{
+				e.currentTarget.addEventListener(MouseEvent.CLICK, onRefreshBtnClick);
+				e.currentTarget.removeEventListener(Event.COMPLETE, onRefreshBtnComplete);
+			}
+			/**
+			 * 刷新
+			 * */
+			private function onRefreshBtnClick(e:MouseEvent):void
+			{
+				AppFacade.getInstace().sendNotification(MaterialPanelMediator.MPM_UPDATE_MATERIAL);
+			}
+		]]>
+	</mx:Script>
+	<mx:HBox width="100%"
+			 y="5"
+			 height="26"
+			 horizontalGap="0">
+		<mx:Label id="pageLab"/>
+		<mx:LinkButton id="upBtn"
+			 enabled="false"
+			 label="上一页"
+			 click="up()"/>
+		<mx:LinkButton id="downBtn"
+			 enabled="false"
+			 label="下一页"
+			 click="down()"/>
+		<mx:NumericStepper minimum="1"
+						   enabled="false"
+						   id="number"
+						   width="46"/>
+		<mx:LinkButton label="转到"
+			 enabled="false"
+			 id="goBtn"
+			 click="go()"/>
+		<mx:Image source="com/asset/swf/button/refresh_btn.swf"
+				  toolTip="刷新"
+				  complete="onRefreshBtnComplete(event)"/>
+	</mx:HBox>
+	<as:TileImage y="35"
+				  width="280"
+				  height="90%"
+				  imageW="{imageW}"
+				  imageH="{imageH}"
+				  id="tileImage"
+				  verticalScrollPolicy="off"
+				  horizontalScrollPolicy="off"
+				  cachePolicy="on"
+				  verticalGap="1">
+
+	</as:TileImage>
+</mx:Panel>

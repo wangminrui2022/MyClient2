@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+-->
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+				width="434"
+				height="234"
+				showCloseButton="true"
+				title="创建地图"
+				fontSize="12"
+				close="closeWindow();"
+				layout="absolute">
+	<mx:Script>
+		<![CDATA[
+			import com.maptype.core.isometric.IsoUtils;
+			import com.maptype.core.staggered.StaUtils;
+			import mx.collections.ArrayCollection;
+			import com.pureMVC.view.mediator.NewCreateMediator;
+			import com.pureMVC.controller.business.common.PageClearCommand;
+			import com.pureMVC.core.AppFacade;
+			import mx.managers.PopUpManager;
+
+			[Bindable]
+			public var mapTypeArr:ArrayCollection=new ArrayCollection([{label: StaUtils.STAGGERED, data: 1}, {label: IsoUtils.ISOMETRIC, data: 2}]);
+
+			/**
+			 * 关闭(只能单独重复写以下3行代码)
+			 */
+			private function closeWindow():void
+			{
+				mapTypeArr.removeAll();
+				mapTypeArr=null;
+				AppFacade.getInstace().sendNotification(PageClearCommand.PC_PAGECLEAR, this, "1");
+				AppFacade.getInstace().removeMediator(NewCreateMediator.NAME);
+				PopUpManager.removePopUp(this);
+			}
+		]]>
+	</mx:Script>
+	<mx:VBox width="394"
+			 height="178"
+			 x="18"
+			 y="11">
+		<mx:HBox width="100%"
+				 horizontalGap="6">
+			<mx:Label text="地图名称："/>
+			<mx:TextInput id="mname"
+						  maxChars="10"
+						  text="demo"/>
+		</mx:HBox>
+		<mx:HBox width="100%"
+				 horizontalGap="5">
+			<mx:Label text="地图类型："/>
+			<mx:ComboBox id="MapType"
+						 dataProvider="{mapTypeArr}">
+			</mx:ComboBox>
+		</mx:HBox>
+		<mx:HBox width="100%"
+				 horizontalGap="6">
+			<mx:Label text="保存路径："/>
+			<mx:TextInput id="txtPath" editable="false"
+						  width="254"/>
+			<mx:Button id="browse"
+					   label="浏览"/>
+		</mx:HBox>
+		<mx:HBox width="100%"
+				 horizontalGap="5">
+			<mx:Label text="地图宽：" width="65"/>
+			<mx:TextInput id="mapwidth"
+						  restrict="0-9-"
+						  maxChars="4"
+						  width="65"
+						  text="1200"/>
+			<mx:Label text="px"/>
+			<mx:Label text="地图高：" />
+			<mx:TextInput id="mapheight"
+						  restrict="0-9-"
+						  maxChars="4"
+						  width="65"
+						  text="1200"/>
+			<mx:Label text="px"/>
+		</mx:HBox>
+		<mx:HBox width="100%"
+				 horizontalGap="5">
+			<mx:Label text="网格高："  width="65"/>
+			<mx:TextInput id="tileHeight"
+						  restrict="0-9-"
+						  maxChars="2"
+						  width="65"
+						  text="30"/>
+			<mx:Label text="px"/>			 
+		</mx:HBox>
+		<mx:HBox width="100%"
+				 horizontalGap="20">
+			<mx:Button id="confirmBtn"
+					   label="确定"/>
+			<mx:Button label="取消"
+					   click="closeWindow()"/>
+		</mx:HBox>
+	</mx:VBox>
+</mx:TitleWindow>

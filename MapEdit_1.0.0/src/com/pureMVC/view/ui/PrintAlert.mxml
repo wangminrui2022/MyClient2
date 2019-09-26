@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+-->
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+				creationComplete="onCreationComplete()"
+				title="输入框"
+				width="252"
+				height="140"
+				fontSize="12"
+				layout="absolute">
+	<mx:Script>
+		<![CDATA[
+			import com.pureMVC.controller.business.common.PageClearCommand;
+			import com.pureMVC.core.AppFacade;
+
+			import mx.managers.PopUpManager;
+
+			public var tConfirm:Function;
+			public var tCancel:Function=closeWindow;
+
+			internal function onCreationComplete():void
+			{
+				txt.setFocus();
+			}
+
+			/**
+			 * 关闭
+			 */
+			public function closeWindow():void
+			{
+				AppFacade.getInstace().sendNotification(PageClearCommand.PC_PAGECLEAR, this, "1");
+				PopUpManager.removePopUp(this);
+			}
+		]]>
+	</mx:Script>
+	<mx:Button x="53"
+			   y="66"
+			   label="确定"
+			   click="tConfirm()"/>
+	<mx:Button x="138"
+			   y="66"
+			   label="取消"
+			   click="tCancel()"/>
+	<mx:TextInput x="22.5"
+				  maxChars="15"
+				  id="txt"
+				  y="26"
+				  width="201"/>
+</mx:TitleWindow>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+-->
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+				title="{mTitle}"
+				width="252"
+				height="140"
+				fontSize="12"
+				layout="absolute">
+	<mx:Script>
+		<![CDATA[
+			import com.pureMVC.view.mediator.MessageAlert1Mediator;
+			import com.pureMVC.core.AppFacade;
+			import mx.managers.PopUpManager;
+
+			[Bindable]
+			public var mTitle:String="消息";
+
+			[Bindable]
+			public var msg:String;
+
+			public var confirm:Function;
+
+			public var cancel:Function;
+
+			/**
+			 * 取消
+			 */
+			internal function closeWindow():void
+			{
+				AppFacade.getInstace().sendNotification(MessageAlert1Mediator.MA1M_MESSAGE1_COMPLETE);
+			}
+		]]>
+	</mx:Script>
+
+	<mx:Label x="17"
+			  y="22"
+			  width="212"
+			  height="28"
+			  textAlign="center"
+			  text="{msg}"
+			  fontSize="12"/>
+	<mx:Button x="38"
+			   y="66"
+			   label="是"
+			   click="confirm()"
+			   width="50"/>
+	<mx:Button x="96"
+			   y="66"
+			   label="否"
+			   click="cancel()"
+			   width="50"/>
+	<mx:Button x="154"
+			   y="66"
+			   label="取消"
+			   click="closeWindow()"/>
+</mx:TitleWindow>

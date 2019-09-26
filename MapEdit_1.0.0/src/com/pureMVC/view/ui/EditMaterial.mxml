@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+-->
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+				close="closeWindow();"
+				showCloseButton="true"
+				title="编辑材质"
+				width="600"
+				height="565"
+				fontSize="12"
+				layout="absolute"
+				xmlns:ns1="com.pureMVC.view.ui.*">
+	<mx:Script>
+		<![CDATA[
+			import com.pureMVC.view.mediator.EditMaterialMediator;
+			import com.pureMVC.core.AppFacade;
+			import mx.managers.PopUpManager;
+
+			/**
+			 * 关闭
+			 * 用于关闭该面板
+			 */
+			private function closeWindow():void
+			{
+				AppFacade.getInstace().sendNotification(EditMaterialMediator.EMM_CLOSE_EDIT_MATERIAL);
+			}
+		]]>
+	</mx:Script>
+	<mx:VBox width="100%"
+			 height="100%"
+			 verticalGap="1">
+		<mx:Canvas width="100%"
+				   id="editCanvas"
+				   height="480"
+				   cachePolicy="on"
+				   verticalScrollPolicy="auto"
+				   horizontalScrollPolicy="auto">
+		</mx:Canvas>
+		<mx:Canvas width="100%"
+				   height="40">
+
+			<mx:CheckBox label="显示材质"
+						 id="mCheckBox"
+						 x="12"
+						 y="6"/>
+			<ns1:SetRoad id="setRoad"
+						 x="81">
+			</ns1:SetRoad>
+			<mx:Image source="com/asset/image/other/s.png"
+					  y="7"
+					  x="318"/>
+			<mx:Button label="保存"
+					   id="save"
+					   x="335"
+					   y="6"/>
+			<mx:Button label="返回"
+					   click="closeWindow()"
+					   x="395"
+					   y="6"/>
+		</mx:Canvas>
+	</mx:VBox>
+</mx:TitleWindow>

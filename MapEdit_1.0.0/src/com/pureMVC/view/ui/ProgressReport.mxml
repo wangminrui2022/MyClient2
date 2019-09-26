@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+-->
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+				title="当前进度"
+				width="440"
+				height="116"
+				fontSize="12"
+				layout="absolute">
+
+	<mx:ProgressBar height="35"
+					width="393"
+					label=""
+					id="pg"
+					labelPlacement="top"
+					mode="manual"
+					fontSize="12"
+					x="20"
+					y="19"/>
+</mx:TitleWindow>

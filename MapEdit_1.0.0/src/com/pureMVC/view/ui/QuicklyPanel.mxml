@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	 MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+-->
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"
+		   width="100%"
+		   height="35"
+		   fontSize="12"
+		   creationComplete="onCreationComplete()"
+		   verticalScrollPolicy="off"
+		   horizontalScrollPolicy="off"
+		   xmlns:ns1="com.pureMVC.view.ui.*">
+	<mx:Script>
+		<![CDATA[
+			import com.pureMVC.model.BindableProxy;
+			import com.pureMVC.core.AppFacade;
+
+			[Bindable]
+			private var bindableP:BindableProxy;
+
+			private function onCreationComplete():void
+			{
+				bindableP=AppFacade.getInstace().retrieveProxy(BindableProxy.NAME) as BindableProxy;
+			}
+		]]>
+	</mx:Script>
+	<mx:Image source="com/asset/image/other/s.png"
+			  y="6"
+			  x="10"/>
+	<mx:Button id="newCreateBtn"
+			   x="25"
+			   y="6"
+			   label="新建"/>
+	<mx:Button id="saveBtn"
+			   x="85"
+			   y="6"
+			   label="保存"
+			   enabled="{bindableP.SP_saveState}"/>
+	<mx:Button id="closeBtn"
+			   x="145"
+			   y="6"
+			   label="关闭"/>
+	<mx:Image source="com/asset/image/other/s.png"
+			  y="6"
+			  x="438"/>
+	<mx:CheckBox x="451"
+				 y="6"
+				 label="地图层"
+				 id="maps"/>
+	<mx:CheckBox x="520"
+				 y="6"
+				 label="网格层"
+				 id="grids"/>
+	<mx:CheckBox x="589"
+				 y="6"
+				 label="路点层"
+				 id="roads"/>
+	<mx:CheckBox x="658"
+				 y="6"
+				 label="对象层"
+				 id="objects"/>
+	<ns1:SetRoad id="setRoad"
+				 x="202"
+				 y="0">
+	</ns1:SetRoad>
+	<mx:Label id="mouseXYLab"
+			  x="727"
+			  y="9"
+			  width="250"/>
+</mx:Canvas>

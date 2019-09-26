@@ -1,0 +1,26 @@
+<help>
+	<helpTheme label="新地图参数设置">
+		<content>
+		<font color='#ff0000'>地图名称：</font>
+		<br/>输入新地图的名字,数字,英文,或中文
+		<br/><font color='#ff0000'>地图类型：</font>
+		<br/>staggered(交错排列)
+		<br/>isometric(等角)，注:交错排列的地图宽高转换公式:
+		<br/>宽=地图宽/网格高*网格宽(Math.floor(width/tileH)*tileW)
+		<br/>高=地图高/网格高*网格高(Math.floor(height/tileH)*tileH)
+		<br/><font color='#ff0000'>地图宽,地图高：</font>
+		<br/>地图宽和高请不要超过4000像素
+		<br/><font color='#ff0000'>网格宽,网格高：</font>
+		<br/>网格宽和网格高的比例是"2:1"(网格宽=网格高*2)，网格高的值只能为偶数	
+		</content>
+	</helpTheme>
+	<helpTheme label="快捷键向导">
+		<content>新建 Ctrl+N
+			<br/>保存 Ctrl+S
+			<br/>帮助 F2
+			<br/>地图信息 F5
+			<br/>交换深度 F6
+			<br/>地图效果图 F7
+		</content>
+	</helpTheme>			
+</help>

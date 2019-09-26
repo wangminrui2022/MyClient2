@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+-->
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+				width="418"
+				height="366"
+				showCloseButton="true"
+				title="异常信息面板"
+				fontSize="12"
+				close="closeWindow();"
+				layout="absolute">
+	<mx:Script>
+		<![CDATA[
+			import com.pureMVC.controller.business.common.PageClearCommand;
+			import com.pureMVC.core.AppFacade;
+			import mx.managers.PopUpManager;
+
+			public function setException(str:String):void
+			{
+				txt.text=str;
+			}
+
+			/**
+			 * 关闭
+			 */
+			internal function closeWindow():void
+			{
+				AppFacade.getInstace().sendNotification(PageClearCommand.PC_PAGECLEAR, this, "1");
+				PopUpManager.removePopUp(this);
+			}
+		]]>
+	</mx:Script>
+	<mx:TextArea editable="false"
+				 id="txt"
+				 verticalScrollPolicy="on"
+				 wordWrap="true"
+				 width="398"
+				 height="324"/>
+
+</mx:TitleWindow>

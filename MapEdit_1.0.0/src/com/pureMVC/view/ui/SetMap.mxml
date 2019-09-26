@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+-->
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+				layout="absolute"
+				width="400"
+				height="238"
+				title="设置地图"
+				showCloseButton="true"
+				close="closeWindow();"
+				fontSize="12">
+	<mx:Script>
+		<![CDATA[
+			import com.pureMVC.view.mediator.SetMapMediator;
+			import com.maptype.core.staggered.StaUtils;
+			import com.maptype.core.isometric.IsoUtils;
+			import mx.collections.ArrayCollection;
+			import mx.managers.PopUpManager;
+			import com.pureMVC.core.AppFacade;
+			[Bindable]
+			public var mapTypeArr:ArrayCollection=new ArrayCollection([
+			{label: StaUtils.STAGGERED, data: 0}, 
+			{label: IsoUtils.ISOMETRIC, data: 1}]);
+
+			/**
+			 * 关闭
+			 */
+			private function closeWindow():void
+			{
+				AppFacade.getInstace().sendNotification(SetMapMediator.SMM_CLEAR, this, "1");
+				PopUpManager.removePopUp(this);
+			}
+		]]>
+	</mx:Script>
+	<mx:VBox x="59.5"
+			 y="20"
+			 height="170"
+			 width="261"
+			 verticalGap="10">
+		<mx:HBox width="100%"
+				 horizontalGap="10">
+			<mx:Label text="地图宽："/>
+			<mx:TextInput id="mapW" 
+						  width="160"
+						  restrict="0-9-"
+						  maxChars="4"/>
+			<mx:Label text="px"/>
+		</mx:HBox>
+		<mx:HBox width="100%"
+				 horizontalGap="10">
+			<mx:Label text="地图高："/>
+			<mx:TextInput id="mapH"
+						  width="160"				
+						  restrict="0-9-"
+						  maxChars="4"/>
+			<mx:Label text="px"/>
+		</mx:HBox>
+		<mx:HBox width="100%"
+				 horizontalGap="10">
+			<mx:Label text="网格高："/>
+			<mx:TextInput id="tileH"
+						  width="160"				
+						  restrict="0-9-"
+						  maxChars="2"/>
+			<mx:Label text="px"/>
+		</mx:HBox>
+		<mx:HBox width="100%"
+				 horizontalGap="5">
+			<mx:Label text="地图类型："/>
+			<mx:ComboBox id="MapType"
+						 dataProvider="{mapTypeArr}">
+			</mx:ComboBox>
+		</mx:HBox>
+		<mx:HBox width="100%"
+				 horizontalGap="20">
+			<mx:Button id="confirmBtn"
+					   label="确定"/>
+			<mx:Button label="取消"
+					   click="closeWindow()"/>
+		</mx:HBox>
+	</mx:VBox>
+</mx:TitleWindow>

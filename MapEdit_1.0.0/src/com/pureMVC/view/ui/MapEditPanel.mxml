@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+-->
+<DragCanvas xmlns="com.mapeditpanel.core.*"
+			xmlns:mx="http://www.adobe.com/2006/mxml"
+			verticalScrollPolicy="off"
+			horizontalScrollPolicy="off"
+			ChildrenDoDrag="true"
+			width="100%"
+			height="100%"
+			horizontalCenter="0" 
+			backgroundAlpha="0.8"
+			backgroundColor="#505151">
+
+</DragCanvas>
