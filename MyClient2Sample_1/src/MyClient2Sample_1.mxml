@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+				initialize="onInitialize()"
+				 frameRate="30"
+				backgroundColor="#ffffff"
+				layout="absolute"
+				xmlns:ns1="com.myclient2sample1.pureMVC.view.ui.*">
+	<mx:Script>
+		<![CDATA[
+			import com.myclient2sample1.pureMVC.controller.start.StartupCommand;
+			import com.myclient2sample1.pureMVC.core.AppFacade;
+
+			/**
+			 * 初始化
+			 * */
+			private function onInitialize():void
+			{
+				var facade:AppFacade=AppFacade.getInstace();
+				facade.sendNotification(StartupCommand.SC_STARTUP, this);
+			}
+		]]>
+	</mx:Script>
+</mx:Application>

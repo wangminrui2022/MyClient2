@@ -1,0 +1,37 @@
+<definitions>
+
+    <media src="com/myclient2sample1/asset/role/role.swf"/>
+	<!-- 
+			/**
+			 * 计算移动方向
+			 * 0/8    =   左
+			 * 1      =   左上
+			 * 2      =   上
+			 * 3      =   右上
+			 * 4      =   右
+			 * 5      =   右下
+			 * 6      =   下
+			 * 7      =   左下
+			 * @param angle
+			 * @return 
+			 */
+	-->
+	<materialDefinition name="role1" type="1" diffuse="null">
+			<!--<diffuse direct="0" width="30" height="59">left_Class</diffuse>
+			<diffuse direct="1" width="30" height="59">left_up_Class</diffuse>
+			<diffuse direct="2" width="30" height="67">up_Class</diffuse>
+			<diffuse direct="3" width="30" height="59">right_up_Class</diffuse>
+			<diffuse direct="4" width="30" height="59">right_Class</diffuse>
+			<diffuse direct="5" width="30" height="68">right_down_Class</diffuse>	
+			<diffuse direct="6" width="30" height="67">down_Class</diffuse>
+			<diffuse direct="7" width="30" height="68">left_down_Class</diffuse>-->
+			<diffuse direct="0">left_Class</diffuse>
+			<diffuse direct="1">left_up_Class</diffuse>
+			<diffuse direct="2">up_Class</diffuse>
+			<diffuse direct="3">right_up_Class</diffuse>
+			<diffuse direct="4">right_Class</diffuse>
+			<diffuse direct="5">right_down_Class</diffuse>	
+			<diffuse direct="6">down_Class</diffuse>
+			<diffuse direct="7">left_down_Class</diffuse>	
+	</materialDefinition>		
+</definitions>

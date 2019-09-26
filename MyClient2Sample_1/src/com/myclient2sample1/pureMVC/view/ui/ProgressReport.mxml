@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+				title="当前进度"
+				width="440"
+				height="116"
+				fontSize="12"
+				borderColor="#434648"
+				borderThicknessBottom="3"
+				borderThicknessLeft="3"
+				borderThicknessRight="3"
+				cornerRadius="10"
+				label="Button"
+				backgroundColor="#E2E2E2"
+				color="#ffffff"
+				layout="absolute">
+
+	<mx:ProgressBar height="35"
+					width="393"
+					label=""
+					id="pg"
+					labelPlacement="top"
+					mode="manual"
+					fontSize="12"
+					fontWeight="normal"
+					x="20"
+					y="19" color="#31393B"/>
+</mx:TitleWindow>
