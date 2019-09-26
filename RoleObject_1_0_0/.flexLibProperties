@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="com.roleobject.vo.DiffuseVO"/>
+<classEntry path="com.roleobject.interfaces.IRole"/>
+<classEntry path="com.roleobject.loader.BasicLoader"/>
+<classEntry path="com.roleobject.loader.RoleMaterialLoader"/>
+<classEntry path="com.roleobject.core.GetMove"/>
+<classEntry path="com.roleobject.vo.MaterialDefinitionVO"/>
+<classEntry path="com.roleobject.vo.RoleInfoVO"/>
+<classEntry path="com.roleobject.core.RoleObjectIsoPoint3D"/>
+<classEntry path="com.roleobject.vo.DefinitionsVO"/>
+<classEntry path="com.roleobject.core.BasicSprite"/>
+<classEntry path="com.roleobject.loader.ExtendLoader"/>
+<classEntry path="com.roleobject.loader.RoleLoader"/>
+<classEntry path="com.roleobject.core.Role"/>
+<classEntry path="com.roleobject.vo.MoveVO"/>
+<classEntry path="com.roleobject.core.Role2"/>
+<classEntry path="com.roleobject.interfaces.IGetMove"/>
+<classEntry path="com.roleobject.core.RoleMove"/>
+<classEntry path="com.roleobject.interfaces.ILoader"/>
+</includeClasses>
+<includeResources/>
+<namespaceManifests/>
+</flexLibProperties>
