@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="com.myclient2.core.MIsoPoint3D"/>
+<classEntry path="com.myclient2.core.MRectangle"/>
+<classEntry path="com.myclient2.core.MSprite"/>
+<classEntry path="com.myclient2.core.engine.MBlock"/>
+<classEntry path="com.myclient2.core.engine.MCamera"/>
+<classEntry path="com.myclient2.core.engine.MEngine"/>
+<classEntry path="com.myclient2.core.engine.MMap"/>
+<classEntry path="com.myclient2.core.engine.MMaterialUsed"/>
+<classEntry path="com.myclient2.core.engine.MMoveRectangle"/>
+<classEntry path="com.myclient2.core.engine.MObjects"/>
+<classEntry path="com.myclient2.core.engine.MPool"/>
+<classEntry path="com.myclient2.core.engine.MTiles"/>
+<classEntry path="com.myclient2.core.engine.MViewPort"/>
+<classEntry path="com.myclient2.core.quadtree.MQuadtree"/>
+<classEntry path="com.myclient2.core.quadtree.MQuadtreeNode"/>
+<classEntry path="com.myclient2.core.search.MMapSeeker"/>
+<classEntry path="com.myclient2.core.search.MSearch"/>
+<classEntry path="com.myclient2.core.vo.MInfoVO"/>
+<classEntry path="com.myclient2.core.vo.MMaterialDefinitionVO"/>
+<classEntry path="com.myclient2.core.vo.MObjectsVO"/>
+<classEntry path="com.myclient2.core.vo.MRoadVO"/>
+<classEntry path="com.myclient2.interfaces.IEngine"/>
+<classEntry path="com.myclient2.interfaces.ILoader"/>
+<classEntry path="com.myclient2.interfaces.IMap"/>
+<classEntry path="com.myclient2.interfaces.IOpenMap"/>
+<classEntry path="com.myclient2.interfaces.IQuadtree"/>
+<classEntry path="com.myclient2.interfaces.IQuadtreeNode"/>
+<classEntry path="com.myclient2.interfaces.IRectangle"/>
+<classEntry path="com.myclient2.interfaces.ISearch"/>
+<classEntry path="com.myclient2.interfaces.ISprite"/>
+<classEntry path="com.myclient2.interfaces.ITiles"/>
+<classEntry path="com.myclient2.loader.MLoader"/>
+<classEntry path="com.myclient2.loader.MLoopLoader"/>
+<classEntry path="com.myclient2.loader.MOpenMap"/>
+<classEntry path="com.myclient2.util.MIsoUtils"/>
+<classEntry path="com.myclient2.util.MStaUtils"/>
+<classEntry path="myclient2.MyClient2"/>
+</includeClasses>
+<includeResources/>
+<namespaceManifests/>
+</flexLibProperties>

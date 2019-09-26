@@ -1,0 +1,412 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
+<meta content="MEngine,com.myclient2.core.engine.MEngine,isClippingOperate,block,clippingOperateArr,mapSeeker,moveCamera,moveCamera2,onShadow,removeMap,renderMap,searchRoad" name="keywords">
+<title>com.myclient2.core.engine.MEngine</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'MEngine - API Documentation';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">MyClient2_1_0_1 API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?com/myclient2/core/engine/MEngine.html&amp;com/myclient2/core/engine/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;MEngine</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class MEngine"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.myclient2.core.engine</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class MEngine</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Implements</td><td><a href="../../interfaces/IEngine.html">IEngine</a></td>
+</tr>
+</table>
+<p></p>
+  MEngine 用于渲染地图显示对象(也可以称作贴图)，以及操作地图显示对象
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#block">block</a> : <a href="../engine/MBlock.html">MBlock</a>
+<div class="summaryTableDescription">
+   获得当前地图渲染显示对象
+   </div>
+</td><td class="summaryTableOwnerCol">MEngine</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#clippingOperateArr">clippingOperateArr</a> : Array<div class="summaryTableDescription">
+   返回当前引擎剔除不渲染对象的(用户自定义操作对象)集合
+   </div>
+</td><td class="summaryTableOwnerCol">MEngine</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#isClippingOperate">isClippingOperate</a> : Boolean<div class="summaryTableDescription">
+   是否需要引擎剔除场景里的操作对象(显示对象的材质类型为"operate"),不对剔除对象进行渲染
+   </div>
+</td><td class="summaryTableOwnerCol">MEngine</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#mapSeeker">mapSeeker</a> : <a href="../search/MMapSeeker.html">MMapSeeker</a>
+<div class="summaryTableDescription">
+   获得地图寻路类
+   </div>
+</td><td class="summaryTableOwnerCol">MEngine</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#MEngine()">MEngine</a>(container:Sprite)</div>
+<div class="summaryTableDescription">
+   构造函数
+   </div>
+</td><td class="summaryTableOwnerCol">MEngine</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveCamera()">moveCamera</a>(move:Point, easing:Number = 1):void</div>
+<div class="summaryTableDescription">
+   根据给定的移动坐标移动摄像机，移动范围是当前摄像机记录的"矩形"信息
+   </div>
+</td><td class="summaryTableOwnerCol">MEngine</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveCamera2()">moveCamera2</a>(x:int, y:int, min:Rectangle, max:Rectangle, easing:Number = 0.6):void</div>
+<div class="summaryTableDescription">
+   根据给定的移动坐标移动摄像机，移动范围是当前摄像机记录的"矩形"信息
+   </div>
+</td><td class="summaryTableOwnerCol">MEngine</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#onShadow()">onShadow</a>(shadow:DisplayObject):void</div>
+<div class="summaryTableDescription">
+   添加某个显示对象在地图中的阴影点透明
+   </div>
+</td><td class="summaryTableOwnerCol">MEngine</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeMap()">removeMap</a>():void</div>
+<div class="summaryTableDescription">
+   从当前显示容器中移除当前引擎渲染的地图,包含清理该地图中所有的显示对象以及地图信息数据
+   </div>
+</td><td class="summaryTableOwnerCol">MEngine</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#renderMap()">renderMap</a>(map:<a href="../../interfaces/IMap.html">IMap</a>, viewPort:<a href="MViewPort.html">MViewPort</a>, camera:<a href="../../interfaces/IRectangle.html">IRectangle</a>):void</div>
+<div class="summaryTableDescription">
+   通过给定的"地图","观察口"以及"摄像机",进行地图渲染
+   </div>
+</td><td class="summaryTableOwnerCol">MEngine</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#searchRoad()">searchRoad</a>(start:Point, end:Point):Array</div>
+<div class="summaryTableDescription">
+   根据起点和终点搜索当前地图的路径
+   </div>
+</td><td class="summaryTableOwnerCol">MEngine</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="block"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">block</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>block:<a href="../engine/MBlock.html">MBlock</a></code>&nbsp;&nbsp;[read-write]<p>
+   获得当前地图渲染显示对象
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get block():<a href="../engine/MBlock.html">MBlock</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set block(value:<a href="../engine/MBlock.html">MBlock</a>):void</code>
+<br>
+</div>
+<a name="clippingOperateArr"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clippingOperateArr</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>clippingOperateArr:Array</code>&nbsp;&nbsp;[read-write]<p>
+   返回当前引擎剔除不渲染对象的(用户自定义操作对象)集合
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get clippingOperateArr():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set clippingOperateArr(value:Array):void</code>
+<br>
+</div>
+<a name="isClippingOperate"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isClippingOperate</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var isClippingOperate:Boolean</code><p>
+   是否需要引擎剔除场景里的操作对象(显示对象的材质类型为"operate"),不对剔除对象进行渲染
+   </p><p>The default value is <code></code>.</p>
+</div>
+<a name="mapSeeker"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mapSeeker</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>mapSeeker:<a href="../search/MMapSeeker.html">MMapSeeker</a></code>&nbsp;&nbsp;[read-write]<p>
+   获得地图寻路类
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get mapSeeker():<a href="../search/MMapSeeker.html">MMapSeeker</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set mapSeeker(value:<a href="../search/MMapSeeker.html">MMapSeeker</a>):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="MEngine()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">MEngine</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function MEngine(container:Sprite)</code><p>
+   构造函数
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">container</span>:Sprite</code></td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="moveCamera()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveCamera</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveCamera(move:Point, easing:Number = 1):void</code><p>
+   根据给定的移动坐标移动摄像机，移动范围是当前摄像机记录的"矩形"信息
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">move</span>:Point</code> &mdash;  要移动的坐标(通常是当前角色坐标)
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">easing</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; 移动时的缓动系数0-1之间
+   </td>
+</tr>
+</table>
+</div>
+<a name="moveCamera2()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveCamera2</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveCamera2(x:int, y:int, min:Rectangle, max:Rectangle, easing:Number = 0.6):void</code><p>
+   根据给定的移动坐标移动摄像机，移动范围是当前摄像机记录的"矩形"信息
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:int</code> &mdash;   要移动的坐标x
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:int</code> &mdash;   要移动的坐标y
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">min</span>:Rectangle</code> &mdash;  最小移动范围
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">max</span>:Rectangle</code> &mdash;  最大移动范围
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">easing</span>:Number</code> (default = <code>0.6</code>)<code></code> &mdash; 移动时的缓动系数0-1之间
+   </td>
+</tr>
+</table>
+</div>
+<a name="onShadow()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onShadow</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function onShadow(shadow:DisplayObject):void</code><p>
+   添加某个显示对象在地图中的阴影点透明
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">shadow</span>:DisplayObject</code> &mdash; 当前显示对象(一般是移动角色)
+   </td>
+</tr>
+</table>
+</div>
+<a name="removeMap()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeMap</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeMap():void</code><p>
+   从当前显示容器中移除当前引擎渲染的地图,包含清理该地图中所有的显示对象以及地图信息数据
+   </p></div>
+<a name="renderMap()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">renderMap</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function renderMap(map:<a href="../../interfaces/IMap.html">IMap</a>, viewPort:<a href="MViewPort.html">MViewPort</a>, camera:<a href="../../interfaces/IRectangle.html">IRectangle</a>):void</code><p>
+   通过给定的"地图","观察口"以及"摄像机",进行地图渲染
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">map</span>:<a href="../../interfaces/IMap.html">IMap</a></code> &mdash;  地图
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">viewPort</span>:<a href="MViewPort.html">MViewPort</a></code> &mdash; 观察口
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">camera</span>:<a href="../../interfaces/IRectangle.html">IRectangle</a></code> &mdash; 摄像机
+   </td>
+</tr>
+</table>
+</div>
+<a name="searchRoad()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">searchRoad</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function searchRoad(start:Point, end:Point):Array</code><p>
+   根据起点和终点搜索当前地图的路径
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">start</span>:Point</code> &mdash;  起点
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">end</span>:Point</code> &mdash;  终点
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash;    搜索的结果
+   </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
