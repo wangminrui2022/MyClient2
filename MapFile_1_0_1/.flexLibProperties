@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="com.mapfile.core.MOpenMap"/>
+<classEntry path="com.mapfile.core.MSaveMap"/>
+<classEntry path="com.mapfile.interfaces.ILoader"/>
+<classEntry path="com.mapfile.interfaces.IOpenMap"/>
+<classEntry path="com.mapfile.interfaces.ISaveMap"/>
+<classEntry path="com.mapfile.loader.MLoader"/>
+<classEntry path="com.mapfile.loader.MLoopLoader"/>
+<classEntry path="com.mapfile.vo.MInfoVO"/>
+<classEntry path="com.mapfile.vo.MMaterialDefinitionVO"/>
+<classEntry path="com.mapfile.vo.MObjectsVO"/>
+<classEntry path="com.mapfile.vo.MapVO"/>
+</includeClasses>
+<includeResources/>
+<namespaceManifests/>
+</flexLibProperties>
