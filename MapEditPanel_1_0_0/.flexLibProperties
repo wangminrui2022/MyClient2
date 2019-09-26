@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="com.mapeditpanel.core.DragCanvas"/>
+</includeClasses>
+<includeResources>
+<resourceEntry destPath="com/mapeditpanel/assets/dragHand.swf" sourcePath="com/mapeditpanel/assets/dragHand.swf"/>
+</includeResources>
+<namespaceManifests/>
+</flexLibProperties>
