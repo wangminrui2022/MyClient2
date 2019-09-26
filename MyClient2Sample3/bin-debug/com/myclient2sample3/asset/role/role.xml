@@ -1,0 +1,20 @@
+<definitions>
+
+    <media src="com/myclient2sample3/asset/role/role.swf"/>
+	<!-- 
+			/**
+			 * 1       =   站         =1
+			 * 13      =   走         =2
+			 * 29      =   跑         =3
+			 * 45      =   跳         =4
+			 * 59      =   攻击1       =5
+			 */
+	-->
+	<materialDefinition name="role1" type="2" diffuse="right_Class">	
+			<diffuse direct="1" width="0" height="0">1</diffuse>
+			<diffuse direct="2" width="0" height="0">13</diffuse>
+			<diffuse direct="3" width="0" height="0">29</diffuse>
+			<diffuse direct="4" width="0" height="0">45</diffuse>
+			<diffuse direct="5" width="0" height="0">59</diffuse>
+	</materialDefinition>		
+</definitions>

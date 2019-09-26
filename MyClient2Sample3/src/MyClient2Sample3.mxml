@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+				initialize="onInitialize()"
+			    addedToStage="onAddedToStage()"
+			    frameRate="30"
+				backgroundColor="#ffffff"
+				layout="absolute">
+	<mx:Script>
+		<![CDATA[
+			import com.myclient2sample3.consts.MapOperates;
+			import com.myclient2sample3.vo.MapConvertVO;
+			import com.myclient2sample3.pureMVC.model.UIProxy;
+			import com.myclient2sample3.pureMVC.controller.business.engine.InitEngineCommand;
+			import com.myclient2sample3.pureMVC.controller.business.ui.InitUICommand;
+		
+			import com.myclient2sample3.pureMVC.controller.start.StartupCommand;
+			import com.myclient2sample3.pureMVC.core.AppFacade;
+			/**
+			 * 初始化
+			 * */
+			private function onInitialize():void
+			{
+				AppFacade.getInstace().sendNotification(StartupCommand.SC_STARTUP, this);
+			}
+			/**
+			 * 添加到舞台
+			 * */
+			private function onAddedToStage():void
+			{
+				AppFacade.getInstace().sendNotification(InitUICommand.IUC_INIT_UI_COMMAND);
+				var mcVO:MapConvertVO=(AppFacade.getInstace().retrieveProxy(UIProxy.NAME) as UIProxy).getMapConvertVO("Start",MapOperates.Start_1);
+				AppFacade.getInstace().sendNotification(InitEngineCommand.IEC_INIT_ENGINE_COMMAND,mcVO);
+			}
+		]]>
+	</mx:Script>
+</mx:Application>
