@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+				title="{mTitle}"
+				width="252"
+				height="140"
+				fontSize="12"
+				layout="absolute">
+	<mx:Script>
+		<![CDATA[
+			import com.view.mediator.MessageAlert1Mediator;
+			import com.core.*;
+			import mx.managers.PopUpManager;
+
+			[Bindable]
+			public var mTitle:String="消息";
+
+			[Bindable]
+			public var msg:String;
+
+			public var confirm:Function;
+
+			public var cancel:Function;
+
+			/**
+			 * 取消
+			 */
+			internal function closeWindow():void
+			{
+				AppFacade.getInstace().sendNotification(MessageAlert1Mediator.MAM_MESSAGEALERT1_RESULT);
+			}
+		]]>
+	</mx:Script>
+
+	<mx:Label x="17"
+			  y="22"
+			  width="212"
+			  height="28"
+			  textAlign="center"
+			  text="{msg}"
+			  fontSize="12"
+			  fontWeight="bold"/>
+	<mx:Button x="38"
+			   y="66"
+			   label="是"
+			   click="confirm()"
+			   width="50"/>
+	<mx:Button x="96"
+			   y="66"
+			   label="否"
+			   click="cancel()"
+			   width="50"/>
+	<mx:Button x="154"
+			   y="66"
+			   label="取消"
+			   click="closeWindow()"/>
+</mx:TitleWindow>

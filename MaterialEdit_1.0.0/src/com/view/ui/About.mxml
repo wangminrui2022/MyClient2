@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+				width="400"
+				height="220"
+				showCloseButton="true"
+				title="关于我们"
+				fontSize="12"
+				close="closeWindow();"
+				layout="absolute">
+	<mx:Script>
+		<![CDATA[
+			import com.controller.business.PageClearCommand;
+			import com.core.consts.MString;
+			import com.core.*;
+			import mx.managers.PopUpManager;
+
+			/**
+			 * 关闭
+			 */
+			private function closeWindow():void
+			{
+				AppFacade.getInstace().sendNotification(PageClearCommand.PAGECLEAR, this, "1");
+				PopUpManager.removePopUp(this);
+			}
+
+			private function onClick():void
+			{
+				navigateToURL(new URLRequest("http://" + MString.URL), "_blank");
+			}
+		]]>
+	</mx:Script>
+	<mx:Image x="22"
+			  y="26"
+			  source="com/asset/image/icon/mc2_logo(128).png"/>
+	<mx:Label x="195"
+			  y="44"
+			  text="{MString.TITLE} "/>
+	<mx:Label x="167"
+			  y="72"
+			  text="{MString.COPYTIGHT}"/>
+	<mx:LinkButton x="178"
+				   y="100"
+				   label="{MString.URL}"
+				   click="onClick()"/>
+	<mx:Label x="249"
+			  y="132"
+			  text="{MString.VERSION}"
+			  width="135"
+			  height="22"/>
+</mx:TitleWindow>

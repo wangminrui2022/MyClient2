@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"
+						layout="absolute"
+						title="{MString.TITLE}"
+						initialize="onInitialize()"
+						color="#31393B"
+						maxWidth="1000"
+						maxHeight="700"
+						width="1000"
+						height="700"
+						xmlns:ui="com.view.ui.*">
+	<mx:Script>
+		<![CDATA[
+			import com.controller.start.StartupCommand;
+			import com.core.*;
+			import com.core.consts.MString;
+
+			/**
+			 * 启动应用程序
+			 * */
+			private function onInitialize():void
+			{
+				var facade:AppFacade=AppFacade.getInstace();
+				facade.sendNotification(StartupCommand.STARTUP, this);
+			}
+		]]>
+	</mx:Script>
+	<ui:MainMenuBar id="mainMenu"
+					 width="100%"/>
+	<mx:Canvas id="operatePanel"
+			   horizontalScrollPolicy="off"
+			   verticalScrollPolicy="off"
+			   width="100%"
+			   height="99%"
+			   y="22">
+		<ui:QuicklyPanel id="quick">
+		</ui:QuicklyPanel>			   
+		<mx:HBox y="35" width="100%"
+				 height="95%"
+				 horizontalGap="5">
+			<ui:MaterialPanel id="materialPanel">
+			</ui:MaterialPanel>
+			<ui:MaterialEditor id="materialEditor">
+			</ui:MaterialEditor>
+				 
+		</mx:HBox>			   
+	</mx:Canvas>
+</mx:WindowedApplication>

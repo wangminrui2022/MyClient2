@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
+		  horizontalScrollPolicy="off"
+		  verticalScrollPolicy="off"
+		  layout="absolute"
+		  width="195"
+		  height="100%"
+		  title="材质面板"
+		  fontSize="12">
+	<mx:Script>
+		<![CDATA[
+		
+			public var swf:Class;
+
+			/**
+			 * 更新Tree
+			 * */
+			public function updateTreeNode(materialNodeArr:Array):void
+			{		
+				trees.dataProvider=null;
+				trees.dataProvider=materialNodeArr;
+				trees.validateNow();
+				trees.verticalScrollPosition=trees.maxVerticalScrollPosition;
+			}
+
+			/**
+			 * 设置Tree节点图标
+			 * */
+			private function setIcon(item:Object):*
+			{
+				return swf
+			}
+		]]>
+	</mx:Script>
+	<mx:Tree width="100%"
+			 id="trees"
+			 iconFunction="setIcon"
+			 height="100%"
+			 fontSize="12"
+			 y="0"
+			 borderStyle="none"
+			 x="1">
+	</mx:Tree>
+</mx:Panel>

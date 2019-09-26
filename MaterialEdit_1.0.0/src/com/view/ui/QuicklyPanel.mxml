@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"
+		  creationComplete="onCreationComplete()"
+		   width="100%"
+		   height="35"
+		   fontSize="12"
+		   color="#31393B">
+	<mx:Script>
+		<![CDATA[
+			import com.core.consts.MString;
+			import com.controller.business.MenuItemSelectCommand;
+			import com.controller.business.CloseCommand;
+			import com.controller.business.SaveCommand;
+			import com.model.StateProxy;
+			import com.view.mediator.MaterialPanelMediator;
+			import com.core.AppFacade;
+			[Bindable]
+			private var stateP:StateProxy;
+
+			private function onCreationComplete():void
+			{
+				stateP=AppFacade.getInstace().retrieveProxy(StateProxy.NAME) as StateProxy;
+			}
+			/**
+			 * 保存
+			 * */
+			private function onSaveClick():void
+			{
+				AppFacade.getInstace().sendNotification(MenuItemSelectCommand.MENUITEM_SELECT,MString.SAVEFILEBAR);
+			}
+			/**
+			 * 关闭
+			 * */			
+			private function onCloseClick():void
+			{
+				AppFacade.getInstace().sendNotification(MenuItemSelectCommand.MENUITEM_SELECT,MString.CLOSEFILEBAR);
+			}
+			/**
+			 * 导入材质
+			 * */
+			private function onImportClick():void
+			{
+				AppFacade.getInstace().sendNotification(MaterialPanelMediator.IMPORT_MATERIAL);
+			}
+
+			/**
+			 * 添加节点
+			 * */
+			private function onAddNodeClick():void
+			{
+				AppFacade.getInstace().sendNotification(MaterialPanelMediator.ADDNODE);
+			}
+
+			/**
+			 * 删除
+			 * */
+			private function onDeleteClick():void
+			{
+				AppFacade.getInstace().sendNotification(MaterialPanelMediator.DELETE);
+			}
+		]]>
+	</mx:Script>
+	<mx:Image source="com/asset/image/other/s.png"
+			  x="5"
+			  y="6"/>
+	<mx:Image source="com/asset/image/other/s.png"
+			  x="136"
+			  y="6"/>
+	<mx:Button x="236"
+			   id="obstacleBtn"
+			   y="5"
+			   label="添加节点"
+			   click="onAddNodeClick()"/>
+	<mx:Button x="322"
+			   id="shadowBtn"
+			   y="5"
+			   label="删除"
+			   click="onDeleteClick()"/>
+	<mx:Button x="150"
+			   y="5"
+			   label="导入材质"
+			   click="onImportClick()"/> 
+	<mx:Button x="20"
+			   y="5"
+			   label="保存"
+			   enabled="{stateP.saveState}"
+			   click="onSaveClick()"/>
+	<mx:Button x="80"
+			   y="5"
+			   label="关闭"
+			   click="onCloseClick()"/>
+
+</mx:Canvas>

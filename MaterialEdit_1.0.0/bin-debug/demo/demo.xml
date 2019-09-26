@@ -1,0 +1,10 @@
+<definitions>
+  <media src="D:\My Work Space\flex project\MyClient 2 Publish\MaterialEdit_1.0.0\bin-debug\demo\WallL1.swf"/>
+  <media src="D:\My Work Space\flex project\MyClient 2 Publish\MaterialEdit_1.0.0\bin-debug\demo\build.swf"/>
+  <materialDefinition name="WallL1" type="tile" used="null" width="60" height="180" elementType="MovieClip">
+    <diffuse>WallL1_Class</diffuse>
+  </materialDefinition>
+  <materialDefinition name="house1" type="object" used="null" width="220" height="227" elementType="BitmapData">
+    <diffuse>house1_Class</diffuse>
+  </materialDefinition>
+</definitions>

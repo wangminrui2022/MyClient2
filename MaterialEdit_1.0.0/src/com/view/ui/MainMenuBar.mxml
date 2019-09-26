@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:MenuBar xmlns:mx="http://www.adobe.com/2006/mxml"
+			dataProvider="{menuItemsXml}"
+			labelField="@label"
+			creationComplete="onCreationComplete();"
+			fontSize="12">
+	<mx:Script>
+		<![CDATA[
+			import com.core.AppFacade;
+			import com.model.BindableProxy;
+
+			/**
+			 * 初始化方法
+			 */
+			 [Bindable]
+			private var bindableP:BindableProxy;
+
+			private function onCreationComplete():void
+			{
+				bindableP=AppFacade.getInstace().retrieveProxy(BindableProxy.NAME) as BindableProxy;
+			}
+		]]>
+	</mx:Script>
+	<mx:XMLList id="menuItemsXml">
+		<menuItem label="文件"
+				  data="fileBar">
+			<menuItem label="新建\t\t\tCtrl+N"
+					  data="creatFileBar"/>
+			<menuItem label="保存\t\t\tCtrl+S"
+					  data="saveFileBar"
+					  enabled="{bindableP.menuEnabled}"/>
+			<menuItem label="关闭"
+					  data="closeFileBar"
+					  enabled="{bindableP.menuEnabled}"/>
+			<menuItem label="打开"
+					  data="openFileBar"/>
+		</menuItem>
+		<menuItem label="关于"
+				  data="helpBar">
+			<menuItem label="关于我们\t\t\t"
+					  data="aboutMeBar"/>
+		</menuItem>
+	</mx:XMLList>
+</mx:MenuBar>

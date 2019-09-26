@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"
+		   color="#FFFFFF"
+		   backgroundSize="100%"
+		   backgroundImage="com/asset/image/other/background.jpg"
+		   width="100%"
+		   height="100%">
+	<mx:Image x="{this.width-150}"
+			  y="{this.height-150}"
+			  source="com/asset/image/icon/mc2_logo(128).png"/>	
+			  
+</mx:Canvas>

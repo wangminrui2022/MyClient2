@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+				width="552"
+				height="346"
+				showCloseButton="true"
+				title="材质属性面板"
+				fontSize="12"
+				close="closeWindow();"
+				creationComplete="onCreationComplete()"
+				layout="absolute">
+	<mx:Script>
+		<![CDATA[
+			import mx.collections.ArrayCollection;
+			import com.model.BindableProxy;
+			import com.view.mediator.MaterialAttributePanelMeidator;
+
+			import com.core.*;
+			[Bindable]
+			private var bindableP:BindableProxy;
+			//元件类型集合
+			[Bindable]
+			public var elementTypeArr:ArrayCollection=new ArrayCollection([
+			{label: "BitmapData", index: 0}, 
+			{label: "MovieClip", index: 1}]);
+			//材质类型集合
+			[Bindable]
+			public var typeArr:ArrayCollection=new ArrayCollection([
+			{label: "tile", index: 0}, 
+			{label: "object", index: 1}]);
+			//材质使用方式集合
+			[Bindable]
+			public var usedArr:ArrayCollection=new ArrayCollection([
+			{label: "null", index: 0}, 
+			{label: "operate", index: 1}, 
+			{label: "tiles", index: 2}, 
+			{label: "only", index: 3}]);
+			
+			private function onCreationComplete():void
+			{
+				bindableP=AppFacade.getInstace().retrieveProxy(BindableProxy.NAME) as BindableProxy;
+			}
+			/**
+			 * 关闭
+			 */
+			private function closeWindow():void
+			{
+				AppFacade.getInstace().sendNotification(MaterialAttributePanelMeidator.MAPM_CLOSED);
+			}
+			/**
+			 * 搜索材质相对应的集合绑定的索引
+			 * @param arr
+			 * @param label
+			 * @return
+			 */
+			public function getIndex(arr:ArrayCollection, label:String):int
+			{
+				for (var i:int=0; i < arr.length; i++)
+				{
+					if (arr[i].label == label)
+					{
+						return arr[i].index;
+					}
+				}
+				return 0;
+			}			
+		]]>
+	</mx:Script>
+	<mx:Canvas width="532"
+			   height="304"
+			   color="#31393B">
+		<mx:Canvas x="275"
+				   y="10"
+				   width="242"
+				   height="242"
+				   borderStyle="solid">
+			<mx:Image width="240"
+					  id="img"
+					  height="240"/>
+		</mx:Canvas>
+		<mx:VBox x="10"
+				 y="10"
+				 height="240"
+				 verticalGap="15">
+			<mx:Label text="元件类名："/>
+			<mx:Label text="材质名字："/>
+			<mx:Label text="材质宽："/>
+			<mx:Label text="材质高："/>
+			<mx:Label text="材质类型："/>
+			<mx:Label text="使用方式："/>
+			<mx:Label text="元件类型："/>
+		</mx:VBox>
+		<mx:VBox x="83"
+				 y="10"
+				 height="240"
+				 verticalGap="12">
+			<mx:TextInput id="m_diffuse"/>
+			<mx:TextInput id="m_name"/>
+			<mx:Label id="m_width"/>
+			<mx:Label id="m_height"/>
+			<mx:ComboBox id="m_type"
+						 dataProvider="{typeArr}">
+			</mx:ComboBox>
+			<mx:ComboBox id="m_used"
+						 dataProvider="{usedArr}">
+			</mx:ComboBox>
+			<mx:ComboBox id="m_elementType"
+						 dataProvider="{elementTypeArr}">
+			</mx:ComboBox>
+		</mx:VBox>
+		<mx:HBox x="122"
+				 y="270"
+				 width="280"
+				 horizontalGap="10">
+			<mx:Button id="diffuseBtn"
+					   label="类定义"
+					   enabled="{bindableP.isEnabledDiffuseBtn}"/>
+			<mx:Button label="保存"
+					   id="savesBtn"
+					   enabled="{bindableP.isEnabledSavesBtn}"/>
+			<mx:Button label="确定"
+					   id="confirmBtn"
+					   enabled="{bindableP.isEnabledConfirmBtn}"/>
+			<mx:Button label="取消"
+					   click="closeWindow()"/>
+		</mx:HBox>
+	</mx:Canvas>
+</mx:TitleWindow>

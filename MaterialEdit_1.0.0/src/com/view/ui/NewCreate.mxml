@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+				width="430"
+				height="182"
+				showCloseButton="true"
+				title="创建材质"
+				fontSize="12"
+				label="Button"
+				close="closeWindow();"
+				layout="absolute">
+	<mx:Script>
+		<![CDATA[
+			import com.controller.business.PageClearCommand;
+			import mx.managers.PopUpManager;
+			import com.view.mediator.NewCreateMediator;
+			import com.core.*;
+
+			/**
+			 * 关闭(只能单独重复写以下3行代码)
+			 */
+			private function closeWindow():void
+			{
+				AppFacade.getInstace().sendNotification(PageClearCommand.PAGECLEAR, this, "1");
+				AppFacade.getInstace().removeMediator(NewCreateMediator.NAME);
+				PopUpManager.removePopUp(this);
+			}
+		]]>
+	</mx:Script>
+	<mx:TextInput x="85"
+				  id="sname"
+				  maxChars="10"
+				  y="25"
+				  text="demo"
+				  width="190"/>
+	<mx:Label x="24"
+			  y="25"
+			  text="材质名称："/>
+	<mx:Button x="136"
+			   y="108"
+			   id="confirmBtn"
+			   label="确定"/>
+	<mx:Button x="209"
+			   y="108"
+			   label="取消"
+			   click="closeWindow()"/>
+	<mx:Label x="24"
+			  y="71"
+			  text="保存路径："/>
+	<mx:TextInput x="85" editable="false"
+				  id="txtPath"
+				  y="69"
+				  width="254"/>
+	<mx:Button x="347"
+			   y="69"
+			   id="browse"
+			   label="浏览"/>
+</mx:TitleWindow>

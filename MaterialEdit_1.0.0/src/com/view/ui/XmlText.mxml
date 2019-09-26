@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 borderStyle="none"
+		 width="100%"
+		 creationComplete="onCreationComplete()"
+		 horizontalGap="2">
+	<mx:Script>
+		<![CDATA[
+			import com.controller.business.PageClearCommand;
+			import com.view.mediator.MaterialEditorMediator;
+			import com.view.mediator.MainMediator;
+
+			import com.core.AppFacade;
+			import com.vo.ModifyVO;
+			import mx.core.UIComponent;
+			[Bindable]
+			public var str:String;
+			//材质名(删除和修改使用)
+			public var m_name:String;
+			//显示节点UI
+			public var ui:UIComponent;
+			//嵌入字体
+ 			[Embed(source="com/asset/font/CourierNew.ttf", fontFamily="CourierNewFontFamily",mimeType="application/x-font")]
+			public var CourierNewClass:Class;	
+												
+			private function onCreationComplete():void
+			{			
+				this.addEventListener(MouseEvent.MOUSE_OVER, onMouseOver);
+				modifyBtn.addEventListener(MouseEvent.CLICK,onModifyClick);
+				deleteBtn.addEventListener(MouseEvent.CLICK,onDeleteClick);
+				ui=new UIComponent();
+				this.addChild(ui);
+				addUI(str);
+			}	
+			/**
+			 * 字体添加到UI显示
+			 * */
+			public function addUI(txt:String):void
+			{
+				var tf:TextField=getTextField(txt);
+				if(ui.numChildren>0)
+					ui.removeChildAt(0);			
+				ui.addChild(tf);
+				//设置高度
+				this.height=tf.textHeight;
+				tf.height=tf.textHeight+10;				
+			}
+			/**
+			 * 获得TextField
+			 * */
+			private function getTextField(txt:String):TextField
+			{
+				var format:TextFormat=new TextFormat();
+				format.color=0xffffff;
+				format.size=14;
+				format.font = "CourierNewFontFamily";	
+				 
+				var tf:TextField=new TextField();
+				//使用嵌入字体
+				tf.embedFonts=true;				
+				tf.width=this.width;
+				tf.wordWrap=true;
+				tf.multiline=true;
+				tf.selectable=false;
+				tf.text=txt;
+				tf.setTextFormat(format,0,tf.length);		
+				return tf;		
+			}
+			/**
+			 * 单击修改
+			 * 
+			 * */
+			private function onModifyClick(e:MouseEvent):void
+			{
+				var mVO:ModifyVO=new ModifyVO();
+				mVO.name=m_name;
+				mVO.xt=this;
+				AppFacade.getInstace().sendNotification(MaterialEditorMediator.MEM_OPEN_MODIFY,mVO);
+				mVO=null;
+			}	
+			/**
+			 * 点击删除
+			 * */
+			private function onDeleteClick(e:MouseEvent):void
+			{
+				var mVO:ModifyVO=new ModifyVO();
+				mVO.name=m_name;
+				mVO.xt=this;
+				AppFacade.getInstace().sendNotification(MaterialEditorMediator.MEM_DELETE,mVO);
+				mVO=null;
+			}	
+				
+			private function onMouseOver(e:MouseEvent):void
+			{
+				modifyBtn.visible=true;
+				deleteBtn.visible=true;
+				this.removeEventListener(MouseEvent.MOUSE_OVER, onMouseOver);
+				this.addEventListener(MouseEvent.MOUSE_OUT, onMouseOut);
+			}
+
+			private function onMouseOut(e:MouseEvent):void
+			{
+				modifyBtn.visible=false;
+				deleteBtn.visible=false;
+				this.removeEventListener(MouseEvent.MOUSE_OUT, onMouseOut);
+				this.addEventListener(MouseEvent.MOUSE_OVER, onMouseOver);
+			}
+		]]>
+	</mx:Script>
+	<mx:Style>
+
+	</mx:Style>
+	<mx:VBox height="100%"
+			 verticalGap="5">
+		<mx:Image id="modifyBtn" visible="false"
+				  source="@Embed('com/asset/image/other/modify.swf')"/>
+		<mx:Image id="deleteBtn" visible="false"
+				  source="@Embed('com/asset/image/other/delete.swf')"/>
+	</mx:VBox>
+</mx:HBox>
