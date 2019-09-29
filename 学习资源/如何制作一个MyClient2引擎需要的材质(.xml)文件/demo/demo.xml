@@ -1,0 +1,15 @@
+<definitions>
+  <media src="C:\Users\Administrator\Desktop\MyClient2 教程\如何制作一个MyClient2引擎需要的材质(.xml)文件\demo\test.swf"/>
+  <materialDefinition name="house1" type="object" used="null" width="220" height="227" elementType="BitmapData">
+    <diffuse>a_Class</diffuse>
+  </materialDefinition>
+  <materialDefinition name="Role1" type="object" used="null" width="40" height="88" elementType="MovieClip">
+    <diffuse>Role1_MC_Class</diffuse>
+  </materialDefinition>
+  <materialDefinition name="sta_40_20_1" type="tile" used="tiles" width="40" height="20" elementType="BitmapData">
+    <diffuse>sta_40_20_1_Class</diffuse>
+  </materialDefinition>
+  <materialDefinition name="iso_40_20_1" type="tile" used="tiles" width="40" height="20" elementType="BitmapData">
+    <diffuse>iso_40_20_1_Class</diffuse>
+  </materialDefinition>
+</definitions>

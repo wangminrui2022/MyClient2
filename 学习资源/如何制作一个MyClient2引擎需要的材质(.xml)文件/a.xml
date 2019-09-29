@@ -1,0 +1,20 @@
+
+
+<definitions>
+  <!--材质地址-->
+  <media src=""/>
+  <!--
+  序号对应下面序号
+  1.材质名称
+  2.材质使用类型，分为：有障碍点对象(object)，无障碍点对象(tile)
+  3.使用方式，分为：空使用(null)对应(object)，平铺使用(tiles)对应(tile)，
+	单个使用(only)对应(tile)，自定义使用(operate)对应(object/tile)
+  4.材质宽
+  5.材质高
+  6.材质类型，分为：影片剪辑(MovieClip)，位图(BitmapData)
+  7.材质的类定义，也就是链接
+  -->	
+  <materialDefinition name="1" type="2" used="3" width="4" height="5" elementType="6">
+	<diffuse>7</diffuse>
+  </materialDefinition>
+</definitions>

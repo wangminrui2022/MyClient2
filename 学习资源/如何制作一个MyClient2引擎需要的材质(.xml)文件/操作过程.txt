@@ -1,0 +1,30 @@
+本文主要讲解如何制作一个MyClient2引擎需要的材质(.xml)文件，紧接着上一片文章讲解，如过没有看过“如何制作一个MyClient2引擎需要的(静态和动态)材质”请先看那篇文章
+
+1.打开MyClient2材质编辑器，新建一个材质，输入材质名称和选择保存地址
+
+2.进入了材质编辑器后，选择“导入材质”，将刚才制作好的材质(.swf)导入进来，
+
+3. 选中材质，点击”添加节点“，先添加“人物”材质的原件类名(也就是链接)“a_Class”
+
+4.单击类定义按钮，这时候我们就看见了“房子”材质显示出来，并且还有宽，高，然后输入材质名字(必须唯一)，选择材质类型，使用方式，单击确定
+
+5.我们接着添加“人物”材质，输入“人物”材质的链接名“Role1_MC_Class”,注意：这时候需要选择原件类型为MovieClip，为什么呢？因为我们的“人物”材质为影片剪辑类型，
+
+接着和前面操作一样，现在一个“房子”和“人物”材质(.xml)文件就制作好了，注意保存哈
+
+6.下面主要描述下材质(.xml)文件的节点解释
+
+<media src="C:\Users\Administrator\Desktop\My Fold\Plant\Plant.swf"/> <!--材质地址-->
+
+<materialDefinition 
+	name="" 			材质名称			
+	type="" 			材质使用类型，分为：有障碍点对象(object)，无障碍点对象(tile)
+	used="" 			使用方式，分为：空使用(null)对应(object)，平铺使用(tiles)对应(tile)，单个使用(only)对应(tile)，自定义使用(operate)对应(object/tile)				
+	width="" 			材质宽			
+	height="" 			材质高
+	elementType="">			材质类型，分为：影片剪辑(MovieClip)，位图(BitmapData)
+    <diffuse>
+	a_Class				材质的类定义，也就是链接
+    </diffuse>
+</materialDefinition>
+
