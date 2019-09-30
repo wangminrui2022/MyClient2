@@ -8,7 +8,7 @@ package com.mapnavigate.loader
 
 	/**
 	 * 基本加载类
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MLoader extends EventDispatcher
 	{

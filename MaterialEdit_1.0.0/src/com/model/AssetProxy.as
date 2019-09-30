@@ -4,7 +4,7 @@ package com.model
 	
 	/**
 	 * 资源模型
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class AssetProxy extends Proxy
 	{

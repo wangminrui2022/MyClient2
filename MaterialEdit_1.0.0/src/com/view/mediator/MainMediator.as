@@ -16,7 +16,7 @@ package com.view.mediator
 
 	/**
 	 * 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MainMediator extends Mediator
 	{

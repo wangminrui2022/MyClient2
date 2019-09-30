@@ -14,7 +14,7 @@ package com.controller.business
 	 * 页面垃圾清理
 	 * 【使用方式】
 	 * 		AppFacade.getInstace().sendNotification(AppConstants.PAGECLEAR,this,"1");
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class PageClearCommand extends SimpleCommand
 	{

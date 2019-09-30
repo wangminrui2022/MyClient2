@@ -11,7 +11,7 @@ package com.model
 
 	/**
 	 * 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MaterialProxy extends Proxy
 	{

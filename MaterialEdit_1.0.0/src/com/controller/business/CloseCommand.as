@@ -9,7 +9,7 @@ package com.controller.business
 
 	/**
 	 * 关闭
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class CloseCommand extends SimpleCommand
 	{

@@ -8,7 +8,7 @@ package com.controller.business
 
 	/**
 	 * 编辑状态更新
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class EditStateCommand extends SimpleCommand
 	{

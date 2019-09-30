@@ -13,7 +13,7 @@ package com.myclient2sample1.pureMVC.controller.start
 
 	/**
 	 * 控制层(command)注册
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ControlCommand extends SimpleCommand
 	{

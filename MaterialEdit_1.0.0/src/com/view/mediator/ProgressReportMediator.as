@@ -23,7 +23,7 @@ package com.view.mediator
 	 * 		this.facade.sendNotification(AppConstants.PROGRESS_LOAD,pgVO);
 	 * 		//完成
 	 * 		this.facade.sendNotification(AppConstants.PROGRESS_COMPLETE); 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ProgressReportMediator extends Mediator
 	{

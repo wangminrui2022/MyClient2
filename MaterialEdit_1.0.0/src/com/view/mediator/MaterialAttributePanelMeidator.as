@@ -17,7 +17,7 @@ package com.view.mediator
 
 	/**
 	 * 材质属性面板
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MaterialAttributePanelMeidator extends Mediator
 	{

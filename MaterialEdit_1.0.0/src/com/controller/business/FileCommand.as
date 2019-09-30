@@ -15,7 +15,7 @@ package com.controller.business
 	 *  fVO.file=file;
 	 *  this.sendNotification(FileCommand.FILE, fVO, "1/2/3/4/5/6/7");
 	 * 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class FileCommand extends SimpleCommand
 	{

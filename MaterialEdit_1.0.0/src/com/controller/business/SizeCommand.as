@@ -10,7 +10,7 @@ package com.controller.business
 
 	/**
 	 * 计算两个矩形的相对尺寸(A相对B,A的缩放值)
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class SizeCommand extends SimpleCommand
 	{

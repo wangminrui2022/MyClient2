@@ -2,7 +2,7 @@ package com.vo
 {
 	/**
 	 * 进度条
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ProgressReportVO
 	{

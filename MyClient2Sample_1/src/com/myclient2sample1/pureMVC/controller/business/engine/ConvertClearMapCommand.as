@@ -7,7 +7,7 @@ package com.myclient2sample1.pureMVC.controller.business.engine
 
 	/**
 	 * 地图切换清理地图垃圾
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ConvertClearMapCommand extends SimpleCommand
 	{

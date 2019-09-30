@@ -10,7 +10,7 @@ package com.controller.business
 
 	/**
 	 * 快捷键键盘事件
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class QuickKeyboardCommand extends SimpleCommand
 	{

@@ -3,7 +3,7 @@ package com.model
 	import org.puremvc.as3.patterns.proxy.Proxy;
 	/**
 	 * 数据绑定模型层
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class BindableProxy extends Proxy
 	{

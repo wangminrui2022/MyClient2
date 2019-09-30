@@ -14,7 +14,7 @@ package com.view.mediator
 
 	/**
 	 *
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MaterialEditorMediator extends Mediator
 	{

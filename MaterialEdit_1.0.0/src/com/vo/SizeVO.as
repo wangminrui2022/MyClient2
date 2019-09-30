@@ -5,7 +5,7 @@ package com.vo
 	
 	/**
 	 * 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class SizeVO
 	{

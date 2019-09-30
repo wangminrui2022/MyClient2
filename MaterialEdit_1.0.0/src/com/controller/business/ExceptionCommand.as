@@ -12,7 +12,7 @@ package com.controller.business
 	 * 程序异常提示面板
 	 * 【使用方式】
 	 * 		this.sendNotification(AppConstants.EXCEPTION,er.message+"\n"+er.getStackTrace());
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ExceptionCommand extends SimpleCommand
 	{

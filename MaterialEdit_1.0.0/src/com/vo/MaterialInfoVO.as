@@ -2,7 +2,7 @@ package com.vo
 {
 	/**
 	 * 材质信息
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MaterialInfoVO
 	{

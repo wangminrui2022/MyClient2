@@ -11,7 +11,7 @@ package com.controller.business
 
 	/**
 	 * 序列化/反序列化
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class SerializableCommand extends SimpleCommand
 	{

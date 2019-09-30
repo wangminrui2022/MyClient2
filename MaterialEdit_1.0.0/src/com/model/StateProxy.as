@@ -4,7 +4,7 @@ package com.model
 	
 	/**
 	 * 状态模型层
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class StateProxy extends Proxy
 	{

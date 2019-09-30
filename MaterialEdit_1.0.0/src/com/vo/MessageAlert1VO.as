@@ -2,7 +2,7 @@ package com.vo
 {
 	/**
 	 * 消息提示框1
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MessageAlert1VO
 	{

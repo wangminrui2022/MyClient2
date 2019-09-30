@@ -14,7 +14,7 @@ package com.view.mediator
 	 * 1.解析材质文件.xml
 	 * 2.序列化材质文件.mt
 	 * 3.加载swf
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class OpenMediator extends Mediator
 	{

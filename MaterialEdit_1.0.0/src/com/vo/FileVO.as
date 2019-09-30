@@ -5,7 +5,7 @@ package com.vo
 	
 	/**
 	 * 文件读取
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class FileVO
 	{

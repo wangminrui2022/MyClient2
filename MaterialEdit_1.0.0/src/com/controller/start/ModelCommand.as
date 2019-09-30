@@ -8,7 +8,7 @@ package com.controller.start
 
 	/**
 	 * 注册应用程序所有Proxy
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ModelCommand extends SimpleCommand
 	{

@@ -6,7 +6,7 @@ package com.controller.start
 
 	/**
 	 * 应用程序启动命令
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class StartupCommand extends MacroCommand
 	{

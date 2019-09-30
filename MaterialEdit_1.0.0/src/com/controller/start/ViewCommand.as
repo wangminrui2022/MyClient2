@@ -7,7 +7,7 @@ package com.controller.start
 
 	/**
 	 * 注册应用程序所有Mediator
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ViewCommand extends SimpleCommand
 	{

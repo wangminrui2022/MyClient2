@@ -4,7 +4,7 @@ package com.vo
 	
 	/**
 	 * 修改-材质节点对象VO
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ModifyVO
 	{

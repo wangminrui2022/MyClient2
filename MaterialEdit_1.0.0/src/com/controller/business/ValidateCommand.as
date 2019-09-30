@@ -1,5 +1,5 @@
 /**
- * MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+ * MyClient2地图编辑器 - Copyright (c) 2010 王明凡
  */
 package com.controller.business
 {
@@ -12,7 +12,7 @@ package com.controller.business
 
 	/**
 	 * 验证
-	 * @author Administrator
+	 * @author 王明凡
 	 */
 	public class ValidateCommand extends SimpleCommand
 	{

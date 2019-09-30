@@ -9,7 +9,7 @@ package com.model
 
 	/**
 	 * 当前显示UI模型层
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class UIProxy extends Proxy
 	{

@@ -12,7 +12,7 @@ package com.controller.business
 
 	/**
 	 * 基本加载类
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class BasicLoaderCommand extends SimpleCommand
 	{

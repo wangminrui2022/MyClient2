@@ -7,7 +7,7 @@ package com.controller.start
 
 	/**
 	 * 注册应用程序所有通知命令
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ControlCommand extends SimpleCommand
 	{

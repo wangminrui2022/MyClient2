@@ -11,7 +11,7 @@ package com.controller.business
 	/**
 	 * 浏览目录
 	 * 返回选择的目录
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class BrowseCommand extends SimpleCommand
 	{

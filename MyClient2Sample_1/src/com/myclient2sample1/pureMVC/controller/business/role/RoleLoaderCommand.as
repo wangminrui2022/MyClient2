@@ -19,7 +19,7 @@ package com.myclient2sample1.pureMVC.controller.business.role
 
 	/**
 	 * 加载角色
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class RoleLoaderCommand extends SimpleCommand
 	{

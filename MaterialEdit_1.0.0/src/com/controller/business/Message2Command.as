@@ -15,7 +15,7 @@ package com.controller.business
 	 * 		var msgVO:MessageAlert2VO=new MessageAlert2VO();
 	 * 		msgVO.msg="消息2测试";
 	 * 		this.sendNotification(MESSAGE2,msgVO);
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class Message2Command extends SimpleCommand
 	{

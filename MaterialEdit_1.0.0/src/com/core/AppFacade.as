@@ -7,7 +7,7 @@ package com.core
 
 	/**
 	 * MVC控制类
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class AppFacade extends Facade implements IFacade
 	{

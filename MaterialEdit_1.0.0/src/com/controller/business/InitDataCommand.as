@@ -9,7 +9,7 @@ package com.controller.business
 
 	/**
 	 * 初始化数据
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class InitDataCommand extends SimpleCommand
 	{

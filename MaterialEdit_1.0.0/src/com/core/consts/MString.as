@@ -2,7 +2,7 @@ package com.core.consts
 {
 	/**
 	 * 字符串常量
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MString
 	{	

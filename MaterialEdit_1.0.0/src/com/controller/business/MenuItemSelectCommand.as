@@ -18,7 +18,7 @@ package com.controller.business
 
 	/**
 	 * 菜单选择命令
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MenuItemSelectCommand extends SimpleCommand
 	{

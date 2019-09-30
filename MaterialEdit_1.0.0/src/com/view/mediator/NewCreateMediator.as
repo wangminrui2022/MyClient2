@@ -25,7 +25,7 @@ package com.view.mediator
 
 	/**
 	 * 新建材质
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class NewCreateMediator extends Mediator
 	{

@@ -23,7 +23,7 @@ package com.view.mediator
 	 * 	
 	 * 
 	 * this.sendNotification(AppConstants.MESSAGE1_COMPLETE);
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MessageAlert1Mediator extends Mediator
 	{

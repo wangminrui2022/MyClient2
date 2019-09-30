@@ -2,7 +2,7 @@ package com.myclient2sample1.vo
 {
 	/**
 	 * 地图切换对象
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MapConvertVO
 	{

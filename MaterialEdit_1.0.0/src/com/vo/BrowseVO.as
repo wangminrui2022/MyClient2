@@ -4,7 +4,7 @@ package com.vo
 	
 	/**
 	 * 浏览目录
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class BrowseVO
 	{

@@ -13,7 +13,7 @@ package com.controller.business
 
 	/**
 	 * 保存场景
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class SaveCommand extends SimpleCommand
 	{

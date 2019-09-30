@@ -7,7 +7,7 @@ package com.vo
 	
 	/**
 	 * 基本加载类 VO
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class BasicLoaderVO
 	{

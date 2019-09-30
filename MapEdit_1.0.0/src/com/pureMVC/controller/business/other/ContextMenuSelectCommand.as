@@ -26,7 +26,7 @@ package com.pureMVC.controller.business.other
 
 	/**
 	 *
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ContextMenuSelectCommand extends SimpleCommand
 	{

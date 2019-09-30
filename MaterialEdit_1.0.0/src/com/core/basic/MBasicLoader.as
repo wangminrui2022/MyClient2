@@ -9,7 +9,7 @@ package com.core.basic
 
 	/**
 	 * 基本Loader类
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MBasicLoader extends EventDispatcher
 	{

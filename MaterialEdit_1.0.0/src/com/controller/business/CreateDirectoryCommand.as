@@ -7,7 +7,7 @@ package com.controller.business
 
 	/**
 	 * 新建材质
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class CreateDirectoryCommand extends SimpleCommand
 	{

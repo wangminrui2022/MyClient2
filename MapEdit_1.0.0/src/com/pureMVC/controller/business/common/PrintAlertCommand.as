@@ -1,5 +1,5 @@
 /**
- * MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+ * MyClient2地图编辑器 - Copyright (c) 2010 王明凡
  */
 package com.pureMVC.controller.business.common
 {
@@ -13,7 +13,7 @@ package com.pureMVC.controller.business.common
 	/**
 	 * 输入框
 	 * this.sendNotification(AppConstants.PAC_PRINTE_ALERT,null,TYPE);
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class PrintAlertCommand extends SimpleCommand
 	{

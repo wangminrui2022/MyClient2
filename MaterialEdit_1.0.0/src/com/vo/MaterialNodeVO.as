@@ -6,7 +6,7 @@ package com.vo
 	/**
 	 * 材质节点
 	 * 类前插入该元数据标签,可启动此类在序列化和反序列化保持类型信息和属性值
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	[RemoteClass]
 	public class MaterialNodeVO
