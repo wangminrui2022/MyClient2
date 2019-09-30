@@ -1,5 +1,10 @@
 package com.myclient2sample3.consts
 {
+	/**
+	 * 
+	 * @author 王明凡
+	 */
+
 	public class Keys
 	{
 		//上 w

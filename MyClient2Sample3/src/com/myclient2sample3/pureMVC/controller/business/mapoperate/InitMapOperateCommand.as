@@ -10,7 +10,7 @@ package com.myclient2sample3.pureMVC.controller.business.mapoperate
 
 	/**
 	 * 初始化地图操作对象模型
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class InitMapOperateCommand extends SimpleCommand
 	{

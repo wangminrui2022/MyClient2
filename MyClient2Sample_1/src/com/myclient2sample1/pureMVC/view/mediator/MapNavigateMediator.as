@@ -15,6 +15,10 @@ package com.myclient2sample1.pureMVC.view.mediator
 	import org.puremvc.as3.interfaces.INotification;
 	import org.puremvc.as3.patterns.mediator.Mediator;
 
+	/**
+	 * 
+	 * @author 王明凡
+	 */
 	public class MapNavigateMediator extends Mediator
 	{
 		public static const NAME:String="MapNavigateMediator";

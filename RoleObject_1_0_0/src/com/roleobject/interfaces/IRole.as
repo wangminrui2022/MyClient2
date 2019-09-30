@@ -1,5 +1,9 @@
 package com.roleobject.interfaces
 {
+	/**
+	 * 
+	 * @author 王明凡
+	 */
 	public interface IRole
 	{
 		/**

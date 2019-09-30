@@ -8,7 +8,10 @@ package com.myclient2sample1.pureMVC.model
 	import flash.display.Shape;
 	
 	import org.puremvc.as3.patterns.proxy.Proxy;
-
+	/**
+	 * 
+	 * @author 王明凡
+	 */
 	public class EngineProxy extends Proxy
 	{
 		public static const NAME:String="EngineProxy";

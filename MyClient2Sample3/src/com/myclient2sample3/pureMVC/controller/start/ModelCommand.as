@@ -10,7 +10,7 @@ package com.myclient2sample3.pureMVC.controller.start
 
 	/**
 	 * 模型层(proxy)注册
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ModelCommand extends SimpleCommand
 	{

@@ -2,7 +2,7 @@ package com.roleobject.vo
 {
 	/**
 	 * 类定义对象
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class DiffuseVO
 	{

@@ -19,7 +19,7 @@ package com.myclient2sample1.pureMVC.controller.business.engine
 
 	/**
 	 * 单击地图
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ClickMapCommand extends SimpleCommand
 	{

@@ -6,7 +6,7 @@ package com.roleobject.core
 
 	/**
 	 * 角色移动类
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class RoleMove extends GetMove
 	{

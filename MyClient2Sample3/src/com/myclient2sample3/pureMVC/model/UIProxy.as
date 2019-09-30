@@ -8,7 +8,10 @@ package com.myclient2sample3.pureMVC.model
 	import mx.core.UIComponent;
 	
 	import org.puremvc.as3.patterns.proxy.Proxy;
-
+	/**
+	 * 
+	 * @author 王明凡
+	 */
 	public class UIProxy extends Proxy
 	{
 		public static const NAME:String="UIProxy"; 

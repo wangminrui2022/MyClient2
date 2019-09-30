@@ -17,7 +17,7 @@ package com.myclient2sample1.pureMVC.controller.business.role
 
 	/**
 	 * 角色移动
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class RoleMoveCommand extends SimpleCommand
 	{

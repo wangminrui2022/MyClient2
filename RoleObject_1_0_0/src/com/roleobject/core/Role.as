@@ -8,7 +8,7 @@ package com.roleobject.core
 
 	/**
 	 * 角色类
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class Role extends BasicSprite implements IRole
 	{

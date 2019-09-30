@@ -6,7 +6,7 @@ package com.myclient2sample3.pureMVC.model
 
 	/**
 	 * 地图操作对象模型层
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MapOperateProxy extends Proxy
 	{

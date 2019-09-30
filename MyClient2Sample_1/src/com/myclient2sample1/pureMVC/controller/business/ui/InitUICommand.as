@@ -13,7 +13,7 @@ package com.myclient2sample1.pureMVC.controller.business.ui
 
 	/**
 	 * 初始化UI模型层(只初始化一次)
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class InitUICommand extends SimpleCommand
 	{

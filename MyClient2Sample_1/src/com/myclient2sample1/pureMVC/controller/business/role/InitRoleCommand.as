@@ -18,7 +18,7 @@ package com.myclient2sample1.pureMVC.controller.business.role
 
 	/**
 	 *  初始化Role模型层
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class InitRoleCommand extends SimpleCommand
 	{

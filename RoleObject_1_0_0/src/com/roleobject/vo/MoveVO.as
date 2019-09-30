@@ -2,7 +2,7 @@ package com.roleobject.vo
 {
 	/**
 	 * 角色移动对象
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MoveVO
 	{

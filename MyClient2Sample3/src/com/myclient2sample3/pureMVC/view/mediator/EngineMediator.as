@@ -8,6 +8,10 @@ package com.myclient2sample3.pureMVC.view.mediator
 	import org.puremvc.as3.interfaces.INotification;
 	import org.puremvc.as3.patterns.mediator.Mediator;
 
+	/**
+	 * 
+	 * @author 王明凡
+	 */
 	public class EngineMediator extends Mediator
 	{
 		public static const NAME:String="EngineMediator";

@@ -8,7 +8,7 @@ package com.roleobject.core
 
 	/**
 	 * 计算获得移动数组
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class GetMove extends EventDispatcher implements IGetMove
 	{
