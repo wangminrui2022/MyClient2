@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2010 王明凡
+-->
 <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
 				initialize="onInitialize()"
 				 frameRate="30"
@@ -12,6 +15,7 @@
 
 			/**
 			 * 初始化
+			 * @author 王明凡
 			 * */
 			private function onInitialize():void
 			{
