@@ -18,7 +18,7 @@ package com.pureMVC.view.mediator
 
 	/**
 	 * 打开地图
-	 * @author Administrator
+	 * @author 王明凡
 	 */
 	public class OpenMapMediator extends Mediator
 	{

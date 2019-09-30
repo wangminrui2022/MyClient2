@@ -21,7 +21,7 @@ package com.pureMVC.view.mediator
 
 	/**
 	 * NewCreate.mxml
-	 * @author Administrator
+	 * @author 王明凡
 	 */
 	public class NewCreateMediator extends Mediator
 	{

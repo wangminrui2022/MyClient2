@@ -5,11 +5,7 @@ package com.consts
 {
 	/**
 	 * 字符串常量
-	 * @author wangmingfan
-	 */
-	/**
-	 * 
-	 * @author Administrator
+	 * @author 王明凡
 	 */
 	public class MString
 	{

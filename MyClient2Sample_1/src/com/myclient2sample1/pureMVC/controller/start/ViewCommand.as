@@ -11,7 +11,7 @@ package com.myclient2sample1.pureMVC.controller.start
 
 	/**
 	 * 视图层(mediator)注册
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ViewCommand extends SimpleCommand
 	{

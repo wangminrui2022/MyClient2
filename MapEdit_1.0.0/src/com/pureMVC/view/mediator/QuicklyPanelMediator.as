@@ -15,7 +15,7 @@ package com.pureMVC.view.mediator
 
 	/**
 	 * 快捷键
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class QuicklyPanelMediator extends Mediator
 	{

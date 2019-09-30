@@ -2,7 +2,7 @@ package com.myclient2sample1.consts
 {
 	/**
 	 * 地图操作对象ID
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MapOperates
 	{

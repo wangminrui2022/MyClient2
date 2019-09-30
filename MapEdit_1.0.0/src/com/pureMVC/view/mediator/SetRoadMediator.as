@@ -21,7 +21,7 @@ package com.pureMVC.view.mediator
 
 	/**
 	 * 设置路点
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class SetRoadMediator extends Mediator
 	{

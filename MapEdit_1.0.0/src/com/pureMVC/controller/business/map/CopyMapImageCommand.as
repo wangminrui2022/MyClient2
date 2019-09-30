@@ -21,7 +21,7 @@ package com.pureMVC.controller.business.map
 
 	/**
 	 * 复制地图效果
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class CopyMapImageCommand extends SimpleCommand
 	{

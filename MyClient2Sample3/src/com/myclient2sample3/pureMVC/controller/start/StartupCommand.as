@@ -1,7 +1,10 @@
 package com.myclient2sample3.pureMVC.controller.start
 {
 	import org.puremvc.as3.patterns.command.MacroCommand;
-	
+	/**
+	 * 
+	 * @author 王明凡
+	 */	
 	public class StartupCommand extends MacroCommand
 	{
 		/**

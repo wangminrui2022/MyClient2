@@ -6,7 +6,7 @@ package com.myclient2sample3.pureMVC.core
 
 	/**
 	 * MVC控制类
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class AppFacade extends Facade
 	{

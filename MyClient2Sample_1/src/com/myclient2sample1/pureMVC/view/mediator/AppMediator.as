@@ -8,7 +8,10 @@ package com.myclient2sample1.pureMVC.view.mediator
 	import flash.events.Event;
 	
 	import org.puremvc.as3.patterns.mediator.Mediator;
-
+	/**
+	 * 
+	 * @author 王明凡
+	 */
 	public class AppMediator extends Mediator
 	{
 		public static const NAME:String="AppMediator";

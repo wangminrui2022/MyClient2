@@ -24,7 +24,7 @@ package com.myclient2sample3.pureMVC.view.mediator
 	 * 		this.facade.sendNotification(ProgressReportMediator.PRM_PROGRESS,pgVO);
 	 * 		//完成
 	 * 		this.facade.sendNotification(ProgressReportMediator.PRM_COMPLETE); 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ProgressReportMediator extends Mediator
 	{

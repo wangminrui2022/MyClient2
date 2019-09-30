@@ -1,5 +1,5 @@
 /**
- *  MapType - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+ *  MapType - Copyright (c) 2010 王明凡
  */
 package com.maptype.core
 {
@@ -9,7 +9,10 @@ package com.maptype.core
 	
 	import flash.display.Sprite;
 	import flash.geom.*;
-
+	/**
+	 * 
+	 * @author 王明凡
+	 */
 	public class Grids extends Sprite implements IGrid
 	{
 		private var mapW:int;
