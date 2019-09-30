@@ -1,5 +1,5 @@
 /**
- * MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+ * MyClient2地图编辑器 - Copyright (c) 2010 王明凡
  */
 package com.pureMVC.controller.business.common
 {
@@ -17,7 +17,7 @@ package com.pureMVC.controller.business.common
 	 * bVO.browseType="1";
 	 * bVO.fFilter=new FileFilter(".xml", "*.xml");
 	 * this.sendNotification(BrowseCommand.BC_BROWSE_DIRECTORY,BrowseVO,"1/2");
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class BrowseCommand extends SimpleCommand
 	{

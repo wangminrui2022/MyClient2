@@ -22,7 +22,7 @@ package com.pureMVC.view.mediator
 	 * 	
 	 * 
 	 * this.sendNotification(MessageAlert1Mediator.MA1M_MESSAGE1_COMPLETE);
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MessageAlert1Mediator extends Mediator
 	{

@@ -1,5 +1,5 @@
 /**
- * MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+ * MyClient2地图编辑器 - Copyright (c) 2010 王明凡
  */
 package com.pureMVC.controller.business.common
 {
@@ -17,7 +17,7 @@ package com.pureMVC.controller.business.common
 	 *  fVO.file=file;
 	 *  this.sendNotification(FileCommand.FC_FILE, fVO, "1/2/3/4/5/6/7");
 	 * 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class FileCommand extends SimpleCommand
 	{

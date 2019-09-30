@@ -20,7 +20,7 @@ package com.pureMVC.view.mediator
 
 	/**
 	 * 使用材质
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class UseMaterialMediator extends Mediator
 	{

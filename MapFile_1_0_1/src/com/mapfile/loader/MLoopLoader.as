@@ -6,7 +6,7 @@ package com.mapfile.loader
 	
 	/**
 	 * 该类用于循环加载一个url集合地址,并返回一个LoaderInfo集合
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MLoopLoader extends MLoader
 	{

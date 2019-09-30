@@ -2,7 +2,7 @@ package com.roleobject.vo
 {
 	/**
 	 * 角色信息
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class RoleInfoVO
 	{

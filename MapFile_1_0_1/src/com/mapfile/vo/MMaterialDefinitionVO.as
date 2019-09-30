@@ -2,7 +2,7 @@ package com.mapfile.vo
 {
 	/**
 	 *  材质定义对象
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	[RemoteClass]		
 	public class MMaterialDefinitionVO

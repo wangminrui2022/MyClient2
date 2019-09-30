@@ -4,7 +4,7 @@ package com.roleobject.vo
 	
 	/**
 	 * 材质文件对象
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class DefinitionsVO
 	{

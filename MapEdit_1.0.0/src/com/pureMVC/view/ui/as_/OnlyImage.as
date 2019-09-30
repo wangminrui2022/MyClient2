@@ -9,7 +9,10 @@ package com.pureMVC.view.ui.as_
 	import com.pureMVC.controller.business.common.ExceptionCommand;
 	import com.pureMVC.core.AppFacade;
 	import com.vo.material.MaterialTileVO;
-
+	/**
+	 * 
+	 * @author 王明凡
+	 */
 	public class OnlyImage extends Image
 	{
 		//材质平铺对象

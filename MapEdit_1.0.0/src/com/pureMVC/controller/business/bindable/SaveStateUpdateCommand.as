@@ -7,7 +7,7 @@ package com.pureMVC.controller.business.bindable
 
 	/**
 	 * 保存状态更新
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class SaveStateUpdateCommand extends SimpleCommand
 	{

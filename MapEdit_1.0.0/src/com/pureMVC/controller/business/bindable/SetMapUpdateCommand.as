@@ -7,7 +7,7 @@ package com.pureMVC.controller.business.bindable
 
 	/**
 	 * 设置地图绑定更新,需要重新设置地图参数,必须移除地图上所有的显示对象
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class SetMapUpdateCommand extends SimpleCommand
 	{

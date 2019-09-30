@@ -1,5 +1,5 @@
 /**
- * MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+ * MyClient2地图编辑器 - Copyright (c) 2010 王明凡
  */
 package com.pureMVC.controller.business.map
 {
@@ -15,7 +15,7 @@ package com.pureMVC.controller.business.map
 
 	/**
 	 * [保存/打开].me文件
-	 * @author Administrator
+	 * @author 王明凡
 	 */
 	public class MEComand extends SimpleCommand
 	{

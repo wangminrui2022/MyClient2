@@ -1,5 +1,5 @@
 /**
- * MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+ * MyClient2地图编辑器 - Copyright (c) 2010 王明凡
  */
 package com.pureMVC.controller.business.material
 {
@@ -25,7 +25,7 @@ package com.pureMVC.controller.business.material
 	/**
 	 * 更新材质在地图上的路点,"编辑材质"保存后要更新地图中所有用到的该材质对象
 	 * 移除在地图上的材质,"删除材质"的也需要删除地图中使用的该材质
-	 * @author Administrator
+	 * @author 王明凡
 	 */
 	public class URMapMaterialCommand extends SimpleCommand
 	{

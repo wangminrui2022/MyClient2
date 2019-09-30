@@ -2,7 +2,7 @@ package com.mapfile.vo
 {
 	/**
 	 * 地图信息类
-	 * @author Administrator
+	 * @author 王明凡
 	 */
 	public class MapVO
 	{

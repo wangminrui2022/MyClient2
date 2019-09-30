@@ -7,7 +7,7 @@ package com.mapeditpanel.core
 
 	/**
 	 * 拖动画布
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class DragCanvas extends Canvas
 	{

@@ -1,7 +1,10 @@
 package com.maptype.interfaces
 {
 	import flash.display.BitmapData;
-	
+	/**
+	 * 
+	 * @author 王明凡
+	 */	
 	public interface ITiles
 	{
 		/**

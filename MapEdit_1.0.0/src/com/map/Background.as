@@ -1,5 +1,5 @@
 /**
- * MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+ * MyClient2地图编辑器 - Copyright (c) 2010 王明凡
  */
 package com.map
 {
@@ -8,7 +8,7 @@ package com.map
 	/**
 	 * 场景背景层
 	 * 用户交错排序类型地图，充当鼠标单击触发事件的条件
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class Background extends Sprite
 	{

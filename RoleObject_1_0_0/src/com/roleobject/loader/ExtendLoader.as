@@ -5,7 +5,7 @@ package com.roleobject.loader
 	
 	/**
 	 * 加载扩展类
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ExtendLoader extends BasicLoader
 	{

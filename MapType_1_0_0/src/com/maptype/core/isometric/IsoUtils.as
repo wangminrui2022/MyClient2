@@ -1,5 +1,5 @@
 /**
- *  MapType - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+ *  MapType - Copyright (c) 2010 王明凡
  */
 package com.maptype.core.isometric
 {
@@ -9,7 +9,7 @@ package com.maptype.core.isometric
 	
 	/**
 	 * 等角工具类,它用来负责等角到屏幕间的坐标切换工作
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class IsoUtils
 	{

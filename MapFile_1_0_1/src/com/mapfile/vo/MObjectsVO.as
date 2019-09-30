@@ -2,7 +2,7 @@ package com.mapfile.vo
 {
 	/**
 	 * 地图对象
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */			
 	public class MObjectsVO
 	{

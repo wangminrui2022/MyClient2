@@ -14,7 +14,7 @@ package com.mapfile.core
 
 	/**
 	 * 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MOpenMap extends EventDispatcher implements IOpenMap
 	{

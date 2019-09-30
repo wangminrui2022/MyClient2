@@ -2,7 +2,7 @@ package com.myclient2sample1.vo
 {
 	/**
 	 * 进度条
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ProgressReportVO
 	{

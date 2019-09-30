@@ -7,7 +7,10 @@ package com.pureMVC.view.mediator
 	import com.pureMVC.view.ui.WaitAnimation;
 	import org.puremvc.as3.interfaces.INotification;
 	import org.puremvc.as3.patterns.mediator.Mediator;
-
+	/**
+	 * 
+	 * @author 王明凡
+	 */
 	public class WaitAnimationMediator extends Mediator
 	{
 		public static const NAME:String="WaitAnimationMediator";

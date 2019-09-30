@@ -10,7 +10,7 @@ package com.mapfile.core
 
 	/**
 	 * 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MSaveMap implements ISaveMap
 	{

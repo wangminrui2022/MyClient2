@@ -2,7 +2,7 @@ package com.mapfile.interfaces
 {
 	/**
 	 * 打开一个地图文件
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public interface IOpenMap
 	{

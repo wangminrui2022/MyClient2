@@ -22,7 +22,7 @@ package com.pureMVC.view.mediator
 	 * 		this.facade.sendNotification(ProgressReportMediator.PROGRESS_LOAD,pgVO);
 	 * 		//完成
 	 * 		this.facade.sendNotification(ProgressReportMediator.PROGRESS_COMPLETE); 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class ProgressReportMediator extends Mediator
 	{

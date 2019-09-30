@@ -9,7 +9,7 @@ package com.roleobject.loader
 
 	/**
 	 * 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class BasicLoader extends EventDispatcher implements ILoader
 	{

@@ -6,7 +6,7 @@ package com.pureMVC.controller.business.bindable
 
 	/**
 	 * 深度交换按钮更新
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class SwitchUpdateCommand extends SimpleCommand
 	{

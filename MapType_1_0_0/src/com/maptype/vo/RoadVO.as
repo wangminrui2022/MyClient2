@@ -1,6 +1,6 @@
 
 /**
- *  MapType - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+ *  MapType - Copyright (c) 2010 王明凡
  */
 package com.maptype.vo
 {
@@ -9,7 +9,7 @@ package com.maptype.vo
 
 	/**
 	 * 路点对象
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	[RemoteClass]
 	public class RoadVO

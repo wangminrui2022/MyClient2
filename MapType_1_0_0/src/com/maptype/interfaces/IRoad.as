@@ -1,10 +1,11 @@
 /**
- *  MapType - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+ *  MapType - Copyright (c) 2010 王明凡
  */
 package com.maptype.interfaces
 {
 	/**
 	 * 该接口定义了绘制路点方法
+	 * @author 王明凡
 	 */	
 	public interface IRoad
 	{

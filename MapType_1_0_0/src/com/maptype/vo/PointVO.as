@@ -5,7 +5,7 @@ package com.maptype.vo
 	
 	/**
 	 * 自定义Point类,用于序列化
-	 * @author wmf
+	 * @author 王明凡
 	 */
 	[RemoteClass]
 	public class PointVO extends Object

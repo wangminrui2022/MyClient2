@@ -2,7 +2,7 @@ package com.roleobject.core
 {
 	/**
 	 * 等角的3D坐标点的类
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class RoleObjectIsoPoint3D
 	{

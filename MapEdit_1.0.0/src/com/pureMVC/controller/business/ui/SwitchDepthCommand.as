@@ -11,7 +11,7 @@ package com.pureMVC.controller.business.ui
 
 	/**
 	 * 交换UI1和UI2的深度
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class SwitchDepthCommand extends SimpleCommand
 	{

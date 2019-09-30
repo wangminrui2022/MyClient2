@@ -10,7 +10,10 @@ package com.pureMVC.view.ui.as_
 	import com.pureMVC.controller.business.common.PageClearCommand;
 	import com.pureMVC.core.AppFacade;
 	import com.vo.material.MaterialTileVO;
-
+	/**
+	 * 
+	 * @author 王明凡
+	 */
 	public class TileImage extends VBox
 	{
 		public var dataProvider:ArrayCollection;

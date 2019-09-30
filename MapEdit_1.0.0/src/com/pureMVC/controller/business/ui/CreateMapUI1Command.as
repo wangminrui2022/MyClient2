@@ -1,5 +1,5 @@
 /**
- * MyClient2地图编辑器 - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+ * MyClient2地图编辑器 - Copyright (c) 2010 王明凡
  */
 package com.pureMVC.controller.business.ui
 {
@@ -16,7 +16,7 @@ package com.pureMVC.controller.business.ui
 
 	/**
 	 * 创建地图显示UI1
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class CreateMapUI1Command extends SimpleCommand
 	{

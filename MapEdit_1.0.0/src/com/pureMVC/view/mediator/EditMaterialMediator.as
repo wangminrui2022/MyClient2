@@ -28,7 +28,7 @@ package com.pureMVC.view.mediator
 
 	/**
 	 * 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class EditMaterialMediator extends Mediator
 	{

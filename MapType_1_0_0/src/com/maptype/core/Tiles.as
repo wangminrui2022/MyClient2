@@ -14,7 +14,7 @@ package com.maptype.core
 
 	/**
 	 * 平铺地砖层
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class Tiles extends Sprite implements ITiles
 	{

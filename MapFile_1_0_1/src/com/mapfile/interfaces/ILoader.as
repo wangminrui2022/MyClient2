@@ -2,7 +2,10 @@ package com.mapfile.interfaces
 {
 	import flash.display.Loader;
 	import flash.utils.ByteArray;
-	
+	/**
+	 * 
+	 * @author 王明凡
+	 */	
 	public interface ILoader
 	{
 		/**

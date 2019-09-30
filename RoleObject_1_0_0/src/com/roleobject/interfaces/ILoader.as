@@ -5,7 +5,7 @@ package com.roleobject.interfaces
 	
 	/**
 	 * 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */	
 	public interface ILoader
 	{

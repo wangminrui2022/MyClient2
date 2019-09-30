@@ -18,7 +18,7 @@ package com.myclient2sample1.pureMVC.controller.business.common
 	 * 清理UIComponent
 	 * this.sendNotification(PageClearCommand.PAGECLEAR,this,"2");
 	 * 
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class PageClearCommand extends SimpleCommand
 	{

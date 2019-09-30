@@ -25,7 +25,7 @@ package com.pureMVC.view.mediator
 
 	/**
 	 * 设置地图
-	 * @author Administrator
+	 * @author 王明凡
 	 */
 	public class SetMapMediator extends Mediator
 	{

@@ -12,7 +12,7 @@ package com.pureMVC.view.mediator
 
 	/**
 	 * 
-	 * @author wangmingfan
+	 * @author ÍõÃ÷·²
 	 */
 	public class HelpMediator extends Mediator
 	{

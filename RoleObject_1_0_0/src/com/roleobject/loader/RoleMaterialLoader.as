@@ -5,7 +5,7 @@ package com.roleobject.loader
 
 	/**
 	 * 角色材质加载
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class RoleMaterialLoader extends ExtendLoader
 	{

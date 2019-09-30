@@ -5,7 +5,10 @@ package com.myclient2sample1.pureMVC.model
 	import com.roleobject.vo.DefinitionsVO;
 	
 	import org.puremvc.as3.patterns.proxy.Proxy;
-
+	/**
+	 * 
+	 * @author 王明凡
+	 */
 	public class RoleProxy extends Proxy
 	{
 		public static const NAME:String="RoleProxy";

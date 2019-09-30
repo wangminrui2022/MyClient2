@@ -10,7 +10,7 @@ package com.mapfile.loader
 
 	/**
 	 * 基本加载类
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class MLoader extends EventDispatcher implements ILoader
 	{

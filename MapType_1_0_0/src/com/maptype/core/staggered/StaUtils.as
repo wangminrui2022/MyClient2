@@ -1,5 +1,5 @@
 /**
- *  MapType - Copyright (c) 2010 黑色闪电工作室 www.heiseshandian.com
+ *  MapType - Copyright (c) 2010 王明凡
  */
 package com.maptype.core.staggered
 {
@@ -8,7 +8,7 @@ package com.maptype.core.staggered
 	
 	/**
 	 * 交错排列工具类
-	 * @author wangmingfan
+	 * @author 王明凡
 	 */
 	public class StaUtils
 	{
