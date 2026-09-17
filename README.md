@@ -1,7 +1,6 @@
 # MyClient2
 
-MyClient2 是一款由 王明凡 于 2010 年开发的 Flash ActionScript 3 (AS3) 2D 游戏引擎。
-它基于 四叉树数据结构 实现，主要面向 格斗类 (ACT) 与 角色扮演类 (ARPG) 游戏开发。
+MyClient2 它基于 四叉树数据结构 实现，主要面向 格斗类 (ACT) 与 角色扮演类 (ARPG) 游戏开发。
 
 产品组成
 
