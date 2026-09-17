@@ -35,16 +35,6 @@ MyClient2 材质编辑器（简称 MC2 材质编辑器）
 将材质按类型分类并封装为 SWF 格式。
 
 单个材质可多次复用，避免重复加载，提升加载效率并减少内存占用。
-
-演示截图
-
-ARPG 游戏示例
-
- ![image](https://github.com/mingfanwang/MyClient2/blob/master/ARGP%E6%BC%94%E7%A4%BA.jpg)
-
-ACT 游戏示例
-  ![image](https://github.com/mingfanwang/MyClient2/blob/master/ACT%E6%BC%94%E7%A4%BA.jpg)
-
 使用提示
 
 ⚠️ 由于 Adobe Flash 与 Adobe AIR 的更新，目前版本已无法直接运行 MyClient2。
